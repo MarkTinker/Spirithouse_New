@@ -1,23 +1,34 @@
 
+/*
+********************
+
+Hompage CSS
+
+********************
+*/
+
+
 body {
     font-family: "Georgia", serif;
     font-size: 18px;
+    background: #e6e4cf;
 }
-.logo {
-    background: url('../images/header/new-logo.png') no-repeat;
-    width:400px;
-    height:150px;
-    margin:0 auto;
-    overflow: hidden;
-    opacity: 0.6;
-    display: block;
-    text-align: center;
-    -webkit-transition: all .4s linear;
-    
+@media (min-width: 768px) {
+    .logo {
+        background: url('../images/new-logo.png') no-repeat;
+        width:400px;
+        height:150px;
+        margin:0 auto;
+        overflow: hidden;
+        opacity: 0.6;
+        display: block;
+        text-align: center;
+        -webkit-transition: all .4s linear;
+        
+    }
 }
-
 .logobackground {
-    background: #e6e4cf url('../images/header/content_bg_yellownoise.gif') repeat;
+    background: #e6e4cf url('../images/content_bg_yellownoise.gif') repeat;
     width:100%;
     margin: 0px;
     padding: 0px;
@@ -26,7 +37,7 @@ body {
 }
 
 nav{
-    background: #e6e4cf url('../images/header/content_bg_yellownoise2.gif') repeat;
+    background: #e6e4cf url('../images/content_bg_yellownoise2.gif') repeat;
     box-shadow: inset 0 0 20px rgba(0,0,0,.15);
     border-radius: 0px;
 }
@@ -48,4 +59,153 @@ nav > .container:first-child {
     .navbar .navbar-collapse {
         text-align: center;
     }
+}
+@media (min-width: 768px) {
+    .bigtitle > h1 {
+        font-size: 70px;
+    }
+    .bigtitle p {
+        font-size: 20px;
+    }
+
+}
+@media(max-width:767px) {
+    .bigtitle > h1 {
+        font-size: 26px;
+    }
+    .bigtitle p {
+        font-size: 15px;
+    }
+}
+.bigtitle > h1 {
+    color: #48701D;
+    text-shadow: 1px 1px 0 rgba(255,255,255,.6);
+    font-variant: small-caps;
+    text-align: center;
+}
+
+.bigtitle p {
+    margin-top: 8px;
+    margin-bottom: 60px;
+    color: #333;
+    text-align: center;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #fff;
+    background: rgba(0,0,0,.3);
+    border-color: rgba(0,0,0,.3);
+    text-shadow: 1px 1px 0 rgba(0,0,0,.3);
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #444;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.videoshow > h3 {
+    letter-spacing: 0.15em;
+    line-height: 1.09em;
+    padding-bottom: 10px;
+    text-align: left;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.75);
+    text-transform: uppercase;
+    width: 100%;
+    border-top: 1px solid black;
+    margin: 23px 0 0;
+    text-align: center;
+    padding: 0;
+    height: 24px;
+}
+
+.videoshow > h3 > span {
+    position: relative;
+    top: -14px;
+    padding: 0 20px;
+    background: url('../images/content_bg_yellownoise2.gif');
+}
+
+.videoWrapper {
+	position: relative; 
+    padding-bottom: 55%; 
+    padding-top: 30px; 
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%; 
+    height: auto; 
+}
+.videoWrapper iframe {
+	position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+}
+
+.info > a {
+    font-style: italic;
+    color: #48701d;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 0 3px 0 3px;
+    border: 1px solid transparent;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+}
+
+.info > a:hover {
+    box-shadow: inset 0 0 2px rgba(0,0,0,0.6);
+    border: 1px solid rgba(255,255,255,.8);
+    background-color: rgba(0,0,0,.05);
+}
+.visitpage {
+    display: block;    
+    padding: 12px 0 9px 15px;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-style: italic;
+    background: #66644e url('../images/navbutton_texture.png') center center repeat;
+    border-radius: 5px;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.9);
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+}
+
+.visitpage:hover {
+    color:#fff;
+    background-color: #bc3a00;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.6);
+    text-decoration: none;
+}
+
+.sectionhead {
+    background: #e6e4cf url(../images/content_bg_yellownoise2.gif) repeat;
+    box-shadow: inset 0 0 20px rgba(0,0,0,.15);
+    border-radius: 0px;
+}
+
+.teal {
+    color: #3B96A7;
+}
+
+/*
+*************
+
+Footer CSS
+
+*************
+*/
+
+footer {
+    background: #e6e4cf url('../images/content_bg_yellownoise2.gif') repeat;
+    box-shadow: inset 0 0 20px rgba(0,0,0,.15);
+    padding: 30px 0 30px 0;
+    font-size: 20px;
 }

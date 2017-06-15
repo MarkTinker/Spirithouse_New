@@ -11,11 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('pages.home');
+Route::get('/home', 'PagesController@getIndex')->name('pages.home');
+Route::get('/', 'PagesController@getIndex')->name('pages.home');
+Route::get('/restaurant', 'PagesController@getRestaurant')->name('pages.restaurant');
+Route::get('/school', 'PagesController@getSchool')->name('pages.school');
+Route::get('/shop', 'PagesController@getShop')->name('pages.shop');
+Route::get('/vouchers', 'PagesController@getVouchers')->name('pages.vouchers');
+Route::get('/foodtours', 'PagesController@getFoodtours')->name('pages.foodtours');
+Route::get('/mapsandinfo', 'PagesController@getMapsandinfo')->name('pages.mapsandinfo');
 

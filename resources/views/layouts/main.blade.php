@@ -13,11 +13,11 @@
             <div class="container">
 
                 @yield('content')
-
-                @include('partials._footer')            
             
             </div>
 
+                @yield('content2') <!-- The contents of outside container -->
+            @include('partials._footer')
         @include('partials._javascript') 
 
         @yield('scripts')

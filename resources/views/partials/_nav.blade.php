@@ -16,40 +16,19 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li class="dropdown-header">Nav header</li>
-                        <li><a href="#">Separated link</a></li>
-                        <li><a href="#">One more separated link</a></li>
-                    </ul>
-                </li>
+                <li class="{{ Request::is('restaurant') ? "active" : "" }}"> <a href="{{route('pages.restaurant')}}">Restaurant</a></li>
+                <!--<li class="{{ Request::is('/restaurant') ? "active" : "" }}"> <a href="{{route('pages.restaurant')}}">Restaurant</a></li>-->
+                <li class="{{Request::is('school') ? "active":""}}"> <a href="{{route('pages.school')}}">Cooking School</a></li>
+                <li class="{{Request::is('shop') ? "active":""}}"> <a href="{{route('pages.shop')}}">Shop</a></li>
+                <li class="{{Request::is('vouchers') ? "active":""}}"> <a href="{{route('pages.vouchers')}}">Vouchers</a></li>
+                <li class="{{Request::is('foodtours') ? "active":""}}"> <a href="{{route('pages.foodtours')}}">Food Tours</a></li>
+                <li class="{{Request::is('mapsandinfo') ? "active":""}}"> <a href="{{route('pages.mapsandinfo')}}">Maps & Info</a></li>
             </ul>
         </div>
         <!--/.nav-collapse -->
     </div>
-    <div class="container">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron
-            and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+    <div class="bigtitle container">
+        <h1>@yield ('pagetitle')</h1>
+        <p>@yield ('pagedescription')</p>        
     </div>
 </nav>
-
-
-<!-- Main jumbotron for a primary marketing message or call to action -->
-<div class="jumbotron">
-    <div class="container">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron
-            and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
-    </div>
-</div>
