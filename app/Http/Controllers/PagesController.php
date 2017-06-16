@@ -19,12 +19,12 @@ class PagesController extends Controller
 
     public function getSchool()
     {
-        return view('pages.home');
+        return view('pages.school');
     }
 
     public function getShop()
     {
-        return view('pages.home');
+        return view('pages.shop');
     }
 
     public function getVouchers()

@@ -127,7 +127,7 @@ nav > .container:first-child {
     background: url('../images/content_bg_yellownoise2.gif');
 }
 
-.videoWrapper {
+.videowrapper {
 	position: relative; 
     padding-bottom: 55%; 
     padding-top: 30px; 
@@ -136,7 +136,7 @@ nav > .container:first-child {
     max-width: 100%; 
     height: auto; 
 }
-.videoWrapper iframe {
+.videowrapper iframe {
 	position: absolute; 
     top: 0; 
     left: 0; 
@@ -418,9 +418,6 @@ p.info {
     width: 98%;
 }
 
-.wide {
-}
-
 .specs img {
     max-width: 100%; /* Add !important if needed. */
     height: auto;
@@ -429,4 +426,70 @@ p.info {
 .pdf {
     padding-right: 20px;
     background: url('../images/pdficon_small.gif') no-repeat center right;
+}
+
+.shadow {
+    box-shadow: 4px 6px 18px rgba(0,0,0,0.46);
+    opacity: 0.75;
+}
+
+.shadow:hover {
+    opacity: 1;
+}
+
+.lists ul li {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #000;
+    padding-left: 10px;
+    padding-top: 10px;
+    border: 0;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 0;
+}
+
+.lists li:hover {
+    -webkit-box-shadow: 10px 10px 20px #636363;
+    box-shadow: 10px 10px 20px #636363;
+    opacity: 1;
+    -moz-transition: all 0.8s ease 0s;
+    z-index: 99;
+}
+
+.review {
+    position: inherit;
+    -moz-transform-origin: 0 40px;
+    background: url('../images/back_review.png') repeat scroll 0 0 transparent;
+    color: #505041;
+    font-size: 17px;
+    line-height: 19px;
+    width: 98%;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 5;
+}
+
+.review p {
+    display: inline;
+    line-height: 1.5em;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.review cite {
+    color: #82826E;
+    display: block;
+    font-size: 0.8em;
+    padding-top: 5px;
+    text-align: right;
+    text-transform: capitalize;
+}
+
+.lists ul {
+    list-style: circle;
+    border: 0;
+    margin: 0;
+    padding: 0;
 }

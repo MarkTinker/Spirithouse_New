@@ -135,6 +135,136 @@
                 <p class="info">Our banquet menus are designed around a <em>shared dining</em> experience. From intimate celebrations, corporate functions to fully themed weddings, our <a href="http://www.spirithouse.com.au/download.php?filetype=1&amp;filename=weddingplanner">function planner</a>                gives you all the tools to plan a memorable event at the Spirit House.</p>
             </div>
         </div>
+        <div class="row">
+            <br/>
+            <div class="col-md-3 specs">
+                <h2>FUNCTION PLANNER.</h2>
+                <a class="visitpage" href="http://www.spirithouse.com.au/download.php?filetype=1&amp;filename=weddingplanner">Download Function Planner</a>
+                Complete with sample menus, table plans and other helpful tips and tricks to create an event that will be <span class='teal'>remembered for all the right reasons</span>.
+                <p>
+                    <a> <img alt="wedding planner booklet" src="{{ url('../images/weddingplanner.jpg') }}" class="shadow"></a>
+                </p>
+            </div>
+            <div class="col-md-9 specs">
+                <h2>SPIRIT HOUSE WEDDINGS IN ACTION</h2>
+                <div class="videowrapper">
+                    <iframe src="http://player.vimeo.com/video/43165142?title=0&amp;byline=0&amp;portrait=0" width="640" height="360" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <br/>
+    <br/>
+    <div class="section">
+        <div class="row">
+            <ul>
+                <li><a href="" > Restaurant </a></li>
+                <li><a href="" > Book Online </a></li>
+                <li><a href="" > Menu </a></li>
+                <li><a href="" > Functions </a></li>
+                <li class="active" ><a href="" > Awards </a></li>
+            </ul>            
+        </div>
+        <p class="info">The Spirit House food is best described as contemporary Thai cuisine. With four best-selling cook books under our belt, and a string of prestigious food awards, the Spirit House has evolved into an iconic food destination.</p>
+        <div class="row">
+            <div class="col-md-3"> 
+                <br/>
+                <div id="TA_excellent628" class="TA_excellent">
+                    <ul id="psTUhXZ" class="TA_links fESyyi8xgp">
+                        <li id="LYCaWbQ" class="3QVwc0bG1R"> 
+                            <a target="_blank" href="http://www.tripadvisor.com/"><img src="http://c1.tacdn.com/img2/widget/tripadvisor_logo_115x18.gif" alt="TripAdvisor" class="widEXCIMG" id="CDSWIDEXCLOGO"/></a>
+                        </li>
+                    </ul>
+                </div>
+                <script src="http://www.jscache.com/wejs?wtype=excellent&amp;uniq=628&amp;locationId=781853&amp;lang=en_US&amp;langversion=2"></script>
+
+                <div id="TA_certificateOfExcellence601" class="TA_certificateOfExcellence">
+                    <ul id="Vb4tl8z" class="TA_links GUgXqCW">
+                        <li id="Db0brXXX3fUc" class="CnF9malpobXk">
+                            <a target="_blank" href="http://www.tripadvisor.com/Restaurant_Review-g677831-d781853-Reviews-Spirit_House-Yandina_Sunshine_Coast_Queensland.html"><img src="http://www.tripadvisor.com/img/cdsi/img2/awards/CoE2015_WidgetAsset-14348-2.png" alt="TripAdvisor" class="widCOEImg" id="CDSWIDCOELOGO"/></a>
+                        </li>
+                    </ul>
+                </div>
+                <script src="http://www.jscache.com/wejs?wtype=certificateOfExcellence&amp;uniq=601&amp;locationId=781853&amp;lang=en_US&amp;year=2015&amp;display_version=2"></script>
+
+                <div id="TA_certificateOfExcellence609" class="TA_certificateOfExcellence">
+                    <ul id="4RzWI6ytaZL" class="TA_links aXdJj0VX">
+                        <li id="MVtGsrd" class="iW8DLhfFeY">
+                            <a target="_blank" href="http://www.tripadvisor.com/"><img src="http://www.tripadvisor.com/img/cdsi/img2/awards/CoE2014_WidgetAsset-14348-2.png" alt="TripAdvisor" class="widCOEImg" id="CDSWIDCOELOGO"/></a>
+                        </li>
+                    </ul>
+                </div>
+                <script src="http://www.jscache.com/wejs?wtype=certificateOfExcellence&amp;uniq=609&amp;locationId=781853&amp;lang=en_US&amp;year=2014&amp;langversion=2"></script>
+
+                <div id="TA_certificateOfExcellence729" class="TA_certificateOfExcellence">
+                    <ul id="JRO5L43KH4YO" class="TA_links EjcXD8NdIx">
+                        <li id="7n33mnlJIts" class="2svFGJ"><a href="http://www.tripadvisor.com/Restaurant_Review-g677831-d781853-Reviews-Spirit_House-Yandina_Sunshine_Coast_Queensland.html">Spirit House</a></li>
+                    </ul>
+                </div>
+                <script src="http://www.jscache.com/wejs?wtype=certificateOfExcellence&amp;uniq=729&amp;locationId=781853&amp;lang=en_US&amp;year=2013"></script>
+
+                <div id="TA_certificateOfExcellence743" class="TA_certificateOfExcellence">
+                    <ul id="T0n4FaklFqg" class="TA_links GUBJ87uDDnmx">
+                        <li id="4nX6qvG" class="3U2mCt888mYV"><a href=http://www.tripadvisor.com/Restaurant_Review-g677831-d781853-Reviews-Spirit_House-Yandina_Sunshine_Coast_Queensland.html>Spirit House</a></li>
+                    </ul>
+                </div>
+                <script src="http://www.jscache.com/wejs?wtype=certificateOfExcellence&amp;uniq=743&amp;locationId=781853&amp;lang=en_US&amp;year=2012"></script>
+
+                <br>
+                <script src="http://www.urbanspoon.com/b/o_like_it/1361098">
+                    < noscript > < a href = "http://www.urbanspoon.com/r/350/1361098/restaurant/Queensland/Spirit-House-Yandina" >
+                        Spirit House < /a></noscript >
+                </script>
+            </div>
+            <div class="col-md-4 lists">
+                <h2>Reviews &mdash; Old &amp; New</h2>
+                <ul>
+                    <li>‘One Hat’ Award - Good Food Guide, Qld. 2007 - 2015
+                    </li>
+                    <li> Top 10 Qld Regional Restaurants - Gourmet Traveler Magazine, 2007 to 2014</li>
+                    <li>‘One Hat’ Award - Brisbane Times, Qld. 2012</li>
+                    <li>"Australia's Best Food Experience' - The Australian - 2010</li>
+                    <li>Best Australian Restaurants - Gourmet Traveler Magazine, 2000-2006</li>
+                    <li>Best Five Queensland Restaurants - Queensland Catering Association, 2001</li>
+                    <li>Best Queensland Restaurant - “Queensland Entertainment” Gold Award, 2000-’01</li>
+                    
+                    <li>Eating and Drinking in Australia - Mietta’s Queensland Award, 2001</li>
+                    <li>Best Asian Restaurant, Sunshine Coast - Restaurant & Caterers Award 2004</li>
+                    <li>Best Themed Restaurant, Queensland - Restaurant & Caterers Award, 2004</li>
+                    <li>National Tourism Restaurant & Catering - Australian Tourism Award, 2005</li>
+                    <li>Tourism Restaurant & Catering - Queensland Tourism Award, 2006/li>
+                    
+                    
+                    <li>Qld & National Small Business Excellence Award 2007, Tourism Category</li>
+                    <li>Tourism Restaurant & Catering - Queensland Tourism Award, 2007</li>
+                    <li>Top 10 Qld Regional Restaurants - Courier Mail Food Guide, 2007</li>
+                    <li>Chamber of Commerce Business Excellence Award – Hall of Fame, 2007</li>
+                    <li>Restaurant and Caterer's Award - 2008 State Winner - Best Tourism Restaurant, Best Themed Restaurant</li>
+                </ul> 
+            </div>
+            <div class="col-md-5 lists">
+                <h2>Reviews &mdash; Old &amp; New</h2>
+                <div class="review animate" style="opacity: 1; ">
+                    <ul>
+                        <li> Best Restaurant, Sunshine Coast - 1998, 1999, 2000
+                        <li> Best Queensland Restaurant - Finalist, 2000
+                        <li> American Express &ldquo;Hall of Fame Award&rdquo;, 2001
+                    </ul>
+                    <cite>American Express Awards</cite>
+                </div>
+                <div class="review animate" style=" opacity: 1; ">
+                    <p>It's hard to imagine a malign spirit that wouldn't be appeased by the tranquillity and beauty of the restaurant setting, and the superb food that emanates from the kitchen. </p>
+                    <br>
+                    <cite>Courier Mail food and wine guide Queensland 2008 Score: 15.5/20, One Hat</cite>
+                </div>
+                <div class="review animate" style=" opacity: 1;  ">
+                    <p>It could be the restful lagoon, lush gardens or the many smiling statues of Buddha. It might be the vibrant flavours and heady but balanced dressings and accompaniments</p>
+                        <br>
+                    <cite>Gourmet Traveller 2008 Australian Restaurant Guide</cite>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end awards secion-->
 
 @endsection

@@ -14,7 +14,7 @@
             <span>RESTAURANT</span>                
         </h3>
 
-        <div class="videoWrapper">
+        <div class="videowrapper">
             <iframe src="http://player.vimeo.com/video/42187291?title=0&amp;byline=0&amp;portrait=0" width="640" height="360" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
         </div>
 
@@ -35,7 +35,7 @@
             <span>COOKING SCHOOL</span>
         </h3>
 
-        <div class="videoWrapper">
+        <div class="videowrapper">
             <iframe src="https://player.vimeo.com/video/128646491" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
         
@@ -63,7 +63,7 @@
             <span>GIFT VOUCHERS</span>                
         </h3>
 
-        <div class="videoWrapper">
+        <div class="videowrapper">
             <iframe src="http://player.vimeo.com/video/42524896?title=0&amp;byline=0&amp;portrait=0" width="640" height="360" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
         </div>
 
@@ -82,7 +82,7 @@
             <span>FOOD TOURS</span>
         </h3>
 
-        <div class="videoWrapper">
+        <div class="videowrapper">
             <iframe src="http://player.vimeo.com/video/42960055?title=0&amp;byline=0&amp;portrait=0" width="640" height="360" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
         </div>
         
