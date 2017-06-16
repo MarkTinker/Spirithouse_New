@@ -13,6 +13,7 @@ body {
     font-size: 18px;
     background: #e6e4cf;
 }
+
 @media (min-width: 768px) {
     .logo {
         background: url('../images/new-logo.png') no-repeat;
@@ -321,12 +322,22 @@ Restaurnat Page CSS
         font-size: 45px;
         margin: 0 20px 0 0;
     }
+
+    .section > .row > ul > li:after {
+        padding-right:20px;
+        font-size: 45px;
+        content:'\00B7';
+    }
 }    
 
 @media (max-width: 767px) {
     .section > .row > ul > li > a {
-        font-size: 22px;
+        font-size: 21px;
         margin: 0 8px 0 0;
+    }
+
+    .section > .row > ul > li:after {
+        content: '';
     }
 }
 .section > .row > ul > li > a {
@@ -340,4 +351,82 @@ Restaurnat Page CSS
     -o-transition: all .2s linear;
     transition: all .2s linear;
     -webkit-transition: all .2s linear;
+}
+.section > .row > ul > li:last-child:after {
+    content:'';
+}
+.section > .row > ul > li:after {
+    color: #7A7C6F;
+    font-family: 'LeagueGothicRegular';
+}
+
+.section > .row > ul > li.active > a {
+    color: #353535;
+    border: none;
+    text-decoration: none;
+}
+
+p.info {    
+    line-height: 38px;
+    padding-top: 15px;
+    color: #424030;
+    text-align: left;
+}
+
+.section h1,h2,h3,h4 {
+    font-family: 'LeagueGothicRegular';
+    text-transform: uppercase;
+    color: #353535;
+    line-height: 1.1em;
+    padding-bottom: 10px;
+}
+
+.specs {
+    display: inline-block;
+}
+.specs > h2 {
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
+}
+
+.specs > ul {
+    list-style: none;
+}
+
+.specs li strong {
+    color: #000;
+    display: block;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.specs li {
+    border-bottom: 1px solid #fff;
+    color: #404040;
+    float: left;
+    font-size: 14px;
+    font-style: italic;
+    list-style: none outside none;
+    margin-right: 16px;
+    padding: 8px 0;
+    width: 40%;
+}
+
+.specs .wide {
+    width: 98%;
+}
+
+.wide {
+}
+
+.specs img {
+    max-width: 100%; /* Add !important if needed. */
+    height: auto;
+}
+
+.pdf {
+    padding-right: 20px;
+    background: url('../images/pdficon_small.gif') no-repeat center right;
 }
