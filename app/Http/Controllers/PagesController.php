@@ -14,7 +14,7 @@ class PagesController extends Controller
 
     public function getRestaurant()
     {
-        return view('pages.home');
+        return view('pages.restaurant');
     }
 
     public function getSchool()

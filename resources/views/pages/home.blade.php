@@ -1,5 +1,7 @@
 @extends('layouts.main')
 
+@section('title', ': Restaurant & Cooking School - Home')
+
 @section ('pagetitle', 'Prepare to be amazed')
 
 @section ('pagedescription', "Spirit House — one of Australia's Best Food Experiences — come find out why")

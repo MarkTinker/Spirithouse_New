@@ -7,10 +7,14 @@
 <!-- CSRF Token -->
 <meta name="csrf-token" content="{{ csrf_token() }}">
 
-<title>{{ config('app.name', 'Laravel') }}</title>
+<title>{{ config('app.name', 'Laravel') }} @yield('title')</title>
 
 <!-- Bootstrap core CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- LeagueGothic CSS -->
+
+<link href="{{ asset('fonts/LeagueGothic/font.css') }}" rel="stylesheet">
 
 <!-- Styles -->
 <link href="{{ asset('css/spirithouse.css') }}" rel="stylesheet">
