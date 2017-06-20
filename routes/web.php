@@ -21,4 +21,6 @@ Route::get('/shop', 'PagesController@getShop')->name('pages.shop');
 Route::get('/vouchers', 'PagesController@getVouchers')->name('pages.vouchers');
 Route::get('/foodtours', 'PagesController@getFoodtours')->name('pages.foodtours');
 Route::get('/mapsandinfo', 'PagesController@getMapsandinfo')->name('pages.mapsandinfo');
-
+Route::get('/recipe', 'PagesController@getRecipe')->name('pages.recipe');
+Route::get('/newsletter', 'PagesController@getNewsletter')->name('pages.newsletter');
+Route::get('/privacy', 'PagesController@getPrivacy')->name('pages.privacy');
