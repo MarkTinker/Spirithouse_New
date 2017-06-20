@@ -113,10 +113,95 @@
                 <img src="{{ url('images/icon-rent.gif') }} ">
             </div>
             <div class="col-md-3">
-                <h4>Rental Car &amp; Uber</h4>
+                <h2>Rental Car &amp; Uber</h2>
                 <p class="gray"><a href="http://lmgtfy.com/?q=Rental+cars+sunshine+coast+queensland" target="_blank">Renting a car</a> for the day is a cheaper option than using taxis etc. 
                 Or if you want someone to do the driving then try <a href="https://get.uber.com/"> UBER</a>, they have now launched on the Sunshine Coast.</p>
             </div>
         </div>
     </div>
+
+    <br/>
+    <br/>
+
+    <div class="section">
+        <div class="row">
+            <ul>
+                <li><a href="" > Contact </a></li>
+                <li><a href="" > Maps </a></li>
+                <li><a href="" > Transport </a></li>
+                <li class="active"><a href="" > Accommodation</a></li>                
+            </ul>            
+        </div>
+
+        <p class="info">Here is a sample of the broad range of Sunshine Coast accommodation on offer which is relatively close to Spirit House. From family run B&B's, to farm houses, luxury beach units or large private homes, this area has it all!</p>
+
+        <div class="row accom">
+
+            <div class="col-md-6">
+
+                <a href="http://www.yandinastation.com" target='blank'> <img src=" {{ url('../images/station.jpg') }}" border="0" /> </a>
+
+                <h2>Yandina Station- Yandina</h2>
+                <p>A B&B with a real difference - three luxury cabins on an historic cattle farm - just 10 minutes from Spirit House and
+                    the coast beaches. &nbsp;&nbsp; <a href="http://www.yandinastation.com.au" target='blank'>Visit >>></a></p>
+
+                <div class="uberclear"></div>
+                <hr class="divider" />
+
+
+                <a href="http://www.thepoint-coolum.com.au" target='blank'><img src=" {{ url('../images/thepoint.jpg') }}" border="0" /> </a>
+
+                <h2>The Point - Coolum</h2>
+                <p>Consists of 60 Villas overlooking national parkland and Coolum's golden surf beaches. Walk across the road and you're
+                    on the beach! &nbsp;&nbsp; <a href="http://www.thepoint-coolum.com.au/" target='blank'>Visit >>></a></p>
+                <div class="uberclear"></div>
+
+                <hr class="divider" />
+
+                <a href="https://www.airbnb.com.au/s/Sunshine-Coast--Queensland?zoom=11&search_by_map=true&sw_lat=-26.671712751022824&sw_lng=152.8291790251037&ne_lat=-26.317248582406627&ne_lng=153.1972210172912&ss_id=76c6ali0&s_tag=Gc8cXLMV"
+                    target='blank'> <img src=" {{ url('../images/airbnb.jpg') }} " border="0" /></a>
+
+                <h2>airbnb - Sunshine Coast</h2>
+
+                <p>For a huge range of amazing places ranging from a simple room to an entire beach house, airbnb is definitely worth a
+                    look. &nbsp;&nbsp; <a href="https://www.airbnb.com.au/s/Sunshine-Coast--Queensland?zoom=11&search_by_map=true&sw_lat=-26.671712751022824&sw_lng=152.8291790251037&ne_lat=-26.317248582406627&ne_lng=153.1972210172912&ss_id=76c6ali0&s_tag=Gc8cXLMV"
+                        target='blank'>Visit >>></a></p>
+
+                <div class="uberclear"></div>
+                <hr class="divider" />
+            </div>
+
+            <div class="col-md-6">
+                <a href="http://www.gridley.com.au" target='blank'><img src=" {{ url('../images/gridley.jpg') }} " border="0" /> </a>
+       
+        		<h2>Gridley Homestead - Eumundi</h2>
+        		<p>An historic homestead just 500m from the famous Eumundi Markets and 10 minutes drive to the Spirit House. Very reasonable rates and charming owners. 
+        		&nbsp;&nbsp; <a href="http://www.gridley.com.au" target='blank'>Visit >>></a></p>
+
+				<div class="uberclear"></div>
+				<hr class="divider" />
+
+        		<a href="http://www.tamansari.com.au" target='blank'><img src=" {{ url('../images/tsari.jpg' }}" border="0" /></a>
+       
+        		<h2>Taman Sari Pavillions - Mapleton</h2>
+        		<p>Two luxury Balinese inspired pavillions on the picturesque Blackall Range at Mapleton - just 20 minutes drive from Spirit House. 
+        		&nbsp;&nbsp; <a href="http://www.tamansari.com.au" target='blank'>Visit >>></a></p>
+
+				<div class="uberclear"></div>
+				<hr class="divider" />
+
+
+      			<a href="http://www.ninderrymanor.com.au/" target='blank'><img src=" {{ url('../images/ninderry.jpg' }}" border="0" /> </a>
+        
+        		<h2>Ninderry Manor - Yandina</h2>
+        		<p>View forever, only 3 minutes away up on the ridge. Packages with or without breakfast: <a onclick="ga('send', 'event', 'Maps and Info', 'Click', 'Ninderry Manor');"  href="https://www.bookings247.com.au/bookings/book_property.php?property_id=1331" target='blank'>  Visit >>></a></p>
+
+    			<div class="uberclear"></div>
+
+				<hr class="divider" /> 
+            </div>            
+        </div>
+
+    </div> 
+    <!-- end .section-->
 @endsection

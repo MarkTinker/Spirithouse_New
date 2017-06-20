@@ -590,3 +590,40 @@ img.bookmark {
     top: -8px;
     right: 30px;
 }
+
+.divider {
+    border: none;
+    height: 2px;
+    background: #cfcdbd;
+    margin-bottom: 15px;
+}
+
+.uberclear {
+    float: none;
+    display: block;
+    clear: both;
+    margin: 0;
+    padding: 0;
+    height: 1px;
+    line-height: 0;
+    font-size: 0;
+}
+
+.accom h2 {
+    font-family: 'LeagueGothicRegular';
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #353535;
+    width: 100%;
+    text-align: center;
+    line-height: 1.09em;
+    padding-bottom: 10px;
+    background: transparent url('../images/header_underline.png') bottom center repeat-x;
+    text-shadow: 1px 1px 0 rgba(255,255,255,0.75);
+}
+
+.accom img {
+    float: left;
+    margin: 0 10px 10px 0;
+}
+    
