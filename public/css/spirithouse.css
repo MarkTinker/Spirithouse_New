@@ -14,6 +14,13 @@ body {
     background: #e6e4cf;
 }
 
+p {
+    font-family: "Georgia", serif;
+    font-size: 18px;
+    line-height: 1.1em;
+    color: #424030;
+}
+
 @media (min-width: 768px) {
     .logo {
         background: url('../images/new-logo.png') no-repeat;
@@ -193,7 +200,15 @@ nav > .container:first-child {
 }
 
 .teal {
-    color: #3B96A7;
+    color: #3B96A7 !important;
+}
+
+.orange{
+    color: #b84000 !important;
+}
+
+.gray {
+    color: gray !important;
 }
 
 /*
@@ -352,6 +367,13 @@ Restaurnat Page CSS
     transition: all .2s linear;
     -webkit-transition: all .2s linear;
 }
+
+.section > .row > ul > li > a:hover {
+    color: #353535;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #fff;
+}
+
 .section > .row > ul > li:last-child:after {
     content:'';
 }
@@ -492,4 +514,79 @@ p.info {
     border: 0;
     margin: 0;
     padding: 0;
+}
+
+/*
+**********************
+
+Food Tours Page
+
+**********************
+*/
+
+.pullquote-left {
+    border-bottom: 4px solid #000000;
+    border-top: 4px solid #000000;
+    display: block;
+    float: left;
+    font-family: Georgia,"Times New Roman","Bitstream Vera Serif",serif;
+    font-size: 26px;
+    letter-spacing: -1px;
+    line-height: 29px;
+    margin: 8px 20px 10px 0;
+    padding: 15px 0;
+    width: 200px;
+}
+
+.itin {
+    font-size: 0.9em;
+    text-align: justify;
+}
+
+.section .wrap {
+    width: 100%;
+    border: 1px solid transparent;
+    background: transparent url('../images/pattern_angledlines_25.png') repeat;
+    text-align: left;
+}
+
+.section .wrap .inner {
+    background: #f9f8ef;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.25);
+    border-radius: 5px;
+    clear: left;
+}
+
+button, button[disabled]:hover, button[disabled]:active {
+    display: block;
+    float: right;
+    background: #f3f3f3 url('../images/button_bg.png') repeat-x bottom;
+    border-radius: 5px;
+    border: 1px outset #fff;
+    font-size: 1em;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+    cursor: pointer;
+    text-shadow: 0 1px 0 white;
+    -moz-text-shadow: 0 1px 0 white;
+    -webkit-box-shadow: 0 0 6px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 0 6px rgba(0,0,0,0.5);
+    box-shadow: 0 0 6px rgba(0,0,0,0.5);
+    min-width: 250px;
+}
+
+button:active {
+    background-color: #fff;
+    background: #f3f3f3 url('../images/button_bg.png') repeat-x top;
+}
+
+button:hover {
+    background-color: #fff;
+}
+
+img.bookmark {
+    position: absolute;
+    top: -8px;
+    right: 30px;
 }

@@ -29,16 +29,16 @@ class PagesController extends Controller
 
     public function getVouchers()
     {
-        return view('pages.home');
+        return view('pages.vouchers');
     }
 
     public function getFoodtours()
     {
-        return view('pages.home');
+        return view('pages.foodtours');
     }
 
     public function getMapsandinfo()
     {
-        return view('pages.home');
+        return view('pages.mapsandinfo');
     }
 }
