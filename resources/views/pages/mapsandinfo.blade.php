@@ -181,7 +181,7 @@
 				<div class="uberclear"></div>
 				<hr class="divider" />
 
-        		<a href="http://www.tamansari.com.au" target='blank'><img src=" {{ url('../images/tsari.jpg' }}" border="0" /></a>
+        		<a href="http://www.tamansari.com.au" target='blank'><img src=" {{ url('../images/tsari.jpg') }}" border="0" /></a>
        
         		<h2>Taman Sari Pavillions - Mapleton</h2>
         		<p>Two luxury Balinese inspired pavillions on the picturesque Blackall Range at Mapleton - just 20 minutes drive from Spirit House. 
@@ -190,8 +190,7 @@
 				<div class="uberclear"></div>
 				<hr class="divider" />
 
-
-      			<a href="http://www.ninderrymanor.com.au/" target='blank'><img src=" {{ url('../images/ninderry.jpg' }}" border="0" /> </a>
+      			<a href="http://www.ninderrymanor.com.au/" target='blank'><img src=" {{ url('../images/ninderry.jpg') }}" border="0" /> </a>
         
         		<h2>Ninderry Manor - Yandina</h2>
         		<p>View forever, only 3 minutes away up on the ridge. Packages with or without breakfast: <a onclick="ga('send', 'event', 'Maps and Info', 'Click', 'Ninderry Manor');"  href="https://www.bookings247.com.au/bookings/book_property.php?property_id=1331" target='blank'>  Visit >>></a></p>
