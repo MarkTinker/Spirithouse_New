@@ -167,6 +167,16 @@
             </ul>            
         </div>
 
+        <p class="info">The Spirit House food is best describ
+            <ul>
+                <li><a href="" > Restaurant </a></li>
+                <li><a href="" > Book Online </a></li>
+                <li><a href="" > Menu </a></li>
+                <li><a href="" > Functions </a></li>
+                <li class="active" ><a href="" > Awards </a></li>
+            </ul>            
+        </div>
+
         <p class="info">The Spirit House food is best described as contemporary Thai cuisine. With four best-selling cook books under our belt, and a string of prestigious food awards, the Spirit House has evolved into an iconic food destination.</p>
         
         <div class="row">
