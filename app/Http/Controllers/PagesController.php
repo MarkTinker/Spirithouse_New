@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Menu;
+
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
@@ -13,14 +15,19 @@ class PagesController extends Controller
 
     public function getRestaurant()
     {
-        return view('pages.restaurant');
+        $menus = Menu::where('menuorder','>', 1)
+                    ->orderBy('menucat')
+                    ->orderBy('menuorder')
+                    ->orderBy('menuprice')
+                    ->get();
+        return view('pages.restaurant')->withMenus($menus);
     }
 
     public function getSchool()
     {
         return view('pages.school');
     }
-
+ 
     public function getShop()
     {
         return view('pages.shop');

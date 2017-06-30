@@ -34,7 +34,7 @@
 				<a href='http://www.spirithouse.com.au/download.php?filetype=1&filename=freerecipe3'> <img class="shadow"  src=" {{ url('../images/freerecipe3.jpg') }} " alt="Chilli Jam Chicken" /></a>
             </div>
         </div>
-
+ 
         <div class="row">
             <div class="col-md-3 col-md-offset-3">
                 <h2>Tamarind Glazed Chicken</h2>			

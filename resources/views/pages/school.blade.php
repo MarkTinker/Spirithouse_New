@@ -38,6 +38,7 @@
                 <li class="active"><a href="" > BOOK A CLASS </a></li>
             </ul>
         </div>
+        <p class="info">Find a class that you like and click the <em>book now</em> button &mdash; it's that easy. </p>
     </div>
 
 @endsection
