@@ -44,7 +44,7 @@
 						<p><strong>Error:</strong> The script response timed out.</p>
                     </div>
 
-                    <form action="#" method='post' name='theForm' id='theNewForm' class='spiritform'>
+                    <form action="#" method="post" name="theForm" id="theNewForm" class="spiritform" data-eway-encrypt-key="yAcvTTUEaZ6MkjqipEek4WYz5GNLTmfXBDolh5DxGomwARYCcDi3LCprwxhLAoWDVju1b2fUHEfCdTfkeNAuOvtMtj3eG5E1sqduXK/z1DhpA0wzraVCofxiR1xWlaT09fQ/R1Y2C5zUEnERTG0xzrcwFQ7D0Jv+Jlz4jiYtzFNCD+7y4C4rPzHP0nfHH2D2PYI+nqaSlXB6GJReNoHX5MPU8LLlYV+zQeV3NMvYYVT0zptOw2vltSQSih5/f9+FRKM41nyoaEXmNeADjf7NJYuwzSPT2u3/iHCbM5ISyKgcUtckXZqucmtZ7JqpwpX1J7YsONNwDUfFdGKyoAa3Jw==">
 
 						<fieldset>
 							<legend>Delivery Details</legend>
@@ -118,7 +118,7 @@
                                     @for ($i = 1; $i <= 6; $i++)
                                         <li class="recipient_wrap recipient{{$i}}">
                                             <input type="text" name="recipient{{$i}}" id="recipient{{$i}}" placeholder="Voucher{{ $i }} &mdash; Name of recipient."/>
-                                        </li>
+                                        </li> 
                                     @endfor
                                 </ol>
                                 <hr/>
@@ -134,13 +134,13 @@
                             <hr/>
 
                             <label for="nameoncard1">Name on Credit Card</label>
-							<input type="text" name="nameoncard1" id="nameoncard1" />
+							<input type="text" name="EWAY_CARDNAME" id="nameoncard1" />
 
 							<label for="cardnumber1">Credit Card Number</label>
-							<input type="text" name="cardnumber1" id="cardnumber1" />
+							<input type="text" data-eway-encrypt-name="EWAY_CARDNUMBER" id="cardnumber1" />
 
-                            <div class="row">
-                                <label for='expiry_m1' style="float: left; margin-right: 10px; ">Credit Card Expiry</label>
+                            <div class="row form-group">
+                                <label for='expiry_m1' class="col-md-5">Credit Card Expiry</label>
                                 <select name="expir_m1" class="cc_droplist">
                                     <option value="01">January</option>
                                     <option value="02">Feburary</option>
@@ -162,16 +162,45 @@
                                 </select>
                             </div>
                             <div class="form-group row">
-                                <label class="col-md-3" for="ccv1">Card Security Number (CCV)</label>
+                                <label class="col-md-5" class="labelccv" for="ccv1">Card Security Number (CCV)</label>
                                 <div class="col-md-4">
-                                    <input type="text" name="ccv1" id="ccv1" size="4" maxlength="4" />                                    
+                                    <input type="text" data-eway-encrypt-name="EWAY_CARDCVN" id="ccv1" size="4" maxlength="4" />                                    
                                 </div>                                
-                                <div class="col-md-5">
+                                <div class="col-md-3">
                                     <img src="{{ asset('images/ccv.png') }}" width="46" height="28" class="ccv" alt="Back of Credit card showing CCV" title="The CCV can be found on the back of your Credit Card." />
                                 </div>
-                            </div>                            
+                            </div>
+                            <div id="eWAYBlock">
+                                <div style="text-align:center; float: left;">
+                                    <a title="eWAY Payment Gateway" target="_blank" rel="nofollow">
+                                        <img alt="eWAY Payment Gateway" src="https://www.eway.com.au/developer/payment-code/verified-seal.ashx?img=12&size=7&pid=7acd3e4d-daf1-41d0-af3a-d18d59323c84" />
+                                    </a>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="tac">
+                                <label for="chk_tc2"><input type="checkbox" id="chk_tc2" name="chk_tc2" />
+                                    Yes &mdash; I have read and agreed to the 
+                                    <a href="#nogo" rel="1" class="terms" >terms and conditions</a> of this purchase.
+                                </label>
+                                <hr />
+                            </div>
+                            <button type="submit" class="submit" id="submit_credit"><span>Pay Now</span></button>
                         </fieldset>
                     </form>
+                    <script src="https://secure.ewaypayments.com/scripts/eCrypt.min.js"></script>
+                    <div class="tandc specs">
+                        <h2>Terms and Conditions:</h2>
+                        <p>Vouchers can be used in the restaurant or the cooking school. 
+                        We do have one condition on vouchers though:</p>
+                        <ul>
+                            <li class="wide"><strong>Don't Lose your Voucher</strong>If using a voucher you MUST present your voucher to 
+                            us on the day of the class or your restaurant reservation- if the voucher has been forgotten or lost, 
+                            the full amount will be charged to the recepients credit card and will be refunded when the vouchers
+                                have been delivered to us.
+                        </ul>
+                        <p>&nbsp;</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -182,5 +211,16 @@
 
 <script src="{{ asset('js/jquery.validate.min.js') }}"></script>
 <script src="{{ asset('js/vouchers.js') }}"></script>
+<script>
+    (function() {
+        var tandc = $('div.tandc');
+        tandc.hide();
+        $('a.terms').click(function(event){
+            event.preventDefault();
+            tandc.slideToggle(200);
+        }             
+        );
 
+    })();
+</script>
 @endsection

@@ -27,8 +27,35 @@ hr {
     margin-bottom: 15px;
 }
 
+a {
+    color:#fff;
+}
+a:focus{
+    color:#fff;
+}
 label {
     font-weight: 500;
+}
+
+#topheader {
+    z-index: 99999;
+}
+
+#topheader.affix .logobackground{
+    display: none;
+}
+
+#topheader.affix {
+    width: 100%;
+}
+#topheader.affix .bigtitle{
+    display: none;
+}
+#topheader.affix nav{
+    height:64px;
+}
+#topheader.affix nav > .container:first-child {
+    background: transparent;
 }
 @media (min-width: 768px) {
     .logo {
@@ -64,6 +91,14 @@ nav > .container:first-child {
     background: rgba(0,0,0,.05);
     border-radius: 0px;
     text-align: center;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #fff;
+    background: #555;
+    background: rgba(0,0,0,.3);
+    border-color: rgba(0,0,0,.3);
+    text-shadow: 1px 1px 0 rgba(0,0,0,.3);
 }
 
 @media (min-width: 768px) {
@@ -184,7 +219,7 @@ nav > .container:first-child {
     color: #fff;
     font-size: 18px;
     margin-bottom: 10px;
-    text-decoration: none;
+    text-decoration: none !important;
     font-style: italic;
     background: #66644e url('../images/navbutton_texture.png') center center repeat;
     border-radius: 5px;
@@ -193,6 +228,16 @@ nav > .container:first-child {
     -o-transition: all .2s linear;
     transition: all .2s linear;
     -webkit-transition: all .2s linear;
+}
+
+.visitpage:hover {
+    text-decoration: none;
+    color:#fff;
+}
+
+.visitpage:active {
+    text-decoration: none;
+    color:#fff;
 }
 
 .visitpage:hover {
@@ -812,4 +857,13 @@ Voucher Page
     border-left: 1px solid #ccc;
     border-right: 1px solid #ccc;
     text-shadow: 1px 1px 0 rgba(255,255,255,0.75);
+}
+
+.ccv{
+    padding-top: 7px;
+    margin-left: -20px;
+}
+
+.labelccv {
+    padding-top:10px;
 }

@@ -10,12 +10,12 @@
 $(document).ready(function () {
 
     /* affix the navbar after scroll below header */
-    /*
-    $('nav').affix({
+    
+    $('#topheader').affix({
         offset: {
-            top: $('.jumbotron').height() - $('nav').height()
+            top: $('nav').height() + 200
         }
     });
-    */
+    
 });
 </script>
