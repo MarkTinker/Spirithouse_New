@@ -24,7 +24,7 @@
                 - Spirit House is a perfect recipe for a dining experience to remember. Set in lush tropical gardens nestled
                 around a tranquil pond, at sunset Spirit House turns into a magic wonderland which will take your breath
                 away.</p>
-            <h2 class="info">For restaurant bookings, <a href="#restaurant_bookings">book online</a> or call <span class="teal"> 07 5446 8994 (ext 2)</span>                during business hours.</h2>
+            <h2 class="info">For restaurant bookings, <a href="#section_bookonline">book online</a> or call <span class="teal"> 07 5446 8994 (ext 2)</span>                during business hours.</h2>
         </div>
         <div class="col-md-4">
             <h2>LATEST CUSTOMER PICS</h2>
@@ -39,14 +39,14 @@
             <ul>
                 <li><strong>Lunch:</strong>Everyday</li>
                 <li><strong>Dinner:</strong>Wed. - Sat.</li>
-                <li class='wide'><strong>Bookings:</strong> What can we say, we're busy so you will definitely need to <a href="#restaurant_bookings">book a table online</a>                    or call the reservation office on <span class="teal">(07) 5446 8994</span>.</li>
+                <li class='wide'><strong>Bookings:</strong> What can we say, we're busy so you will definitely need to <a href="#section_bookonline">book a table online</a>                    or call the reservation office on <span class="teal">(07) 5446 8994</span>.</li>
                 <li class='wide'><strong>Can I BYO?:</strong>Sadly no, we are fully licensed with an <span class='teal'>eclectic range</span>                    of wines from boutique wineries from around the world</li>
                 <li class='wide'><strong>Vegetarians and Allergies</strong> We do cater for vegetarian and gluten free diners, please see
                     the menu below.<br>If you have any other dietary requirements, please advise when making your booking.</li>
                 <li class='wide'><strong>Functions &amp; Groups</strong>Our unique courtyard settings make it easy to offer groups from 6
                     to 60 their own private area to celebrate in style. For more ideas on menus and table plans scroll down
                     to the
-                    <a href="#restaurant_functions">Functions section</a></li>
+                    <a href="#section_functions">Functions section</a></li>
             </ul>
         </div>
         <div class="col-md-8 specs">
@@ -129,10 +129,9 @@
             <h2>Download Menu &amp; Wine List</h2>
             The Spirit House full menu and wine list are also available as pdf files for you to download.<br> Download:
             <a
-                onclick="ga('send', 'event', 'Restaurant Menu', 'Download', 'Menu PDF');" href='http://www.spirithouse.com.au/download.php?filetype=1&filename=spirithousefood'
-                class='pdf'>Menu</a>
-                <br>Download:<a onclick="ga('send', 'event', 'Restaurant Menu', 'Download', 'Wine PDF');" href='http://www.spirithouse.com.au/download.php?filetype=1&filename=spirithousewine'
-                    class='pdf'>Wine List</a>.
+                onclick="ga('send', 'event', 'Restaurant Menu', 'Download', 'Menu PDF');" href="{{ route('download').'?filetype=1&filename=spirithousefood' }}"
+                class="pdf">Menu</a>
+                <br>Download:<a onclick="ga('send', 'event', 'Restaurant Menu', 'Download', 'Wine PDF');" href="{{ route('download').'?filetype=1&filename=spirithousewine' }}" class='pdf'>Wine List</a>.
 
                 <p> &nbsp;</p>
                 <h2>A Shared Experience.</h2>
@@ -276,14 +275,14 @@
                 Or we can cater to corporate groups who want to book the entire restaurant for an exclusive-use event, up
                 to 90 people. </p>
             <p class="info">Our banquet menus are designed around a <em>shared dining</em> experience. From intimate celebrations, corporate
-                functions to fully themed weddings, our <a href="http://www.spirithouse.com.au/download.php?filetype=1&amp;filename=weddingplanner">function planner</a>                gives you all the tools to plan a memorable event at the Spirit House.</p>
+                functions to fully themed weddings, our <a href="{{ route('download').'?filetype=1&amp;filename=weddingplanner' }}">function planner</a>                gives you all the tools to plan a memorable event at the Spirit House.</p>
         </div>
     </div>
     <div class="row">
         <br/>
         <div class="col-md-3 specs">
             <h2>FUNCTION PLANNER.</h2>
-            <a class="visitpage" href="http://www.spirithouse.com.au/download.php?filetype=1&amp;filename=weddingplanner">Download Function Planner</a>            Complete with sample menus, table plans and other helpful tips and tricks to create an event that will be
+            <a class="visitpage" href="{{ route('download').'?filetype=1&amp;filename=weddingplanner' }}">Download Function Planner</a> Complete with sample menus, table plans and other helpful tips and tricks to create an event that will be
             <span
                 class='teal'>remembered for all the right reasons</span>.
                 <p>
@@ -430,9 +429,15 @@
 
 @section ('scripts')
 
-<script >
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    
+  ga('create', 'UA-46131664-1', 'auto');
+  ga('send', 'pageview');
+  </script>
 
 </script>
 @endsection

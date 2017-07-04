@@ -27,10 +27,10 @@ hr {
     margin-bottom: 15px;
 }
 
-a {
+#topheader a {
     color:#fff;
 }
-a:focus{
+#topheader a:focus{
     color:#fff;
 }
 label {
