@@ -286,7 +286,7 @@
             <span
                 class='teal'>remembered for all the right reasons</span>.
                 <p>
-                    <a> <img alt="wedding planner booklet" src="{{ url('../images/weddingplanner.jpg') }}" class="shadow"></a>
+                    <a href="{{ route('download').'?filetype=1&amp;filename=weddingplanner' }}"> <img alt="wedding planner booklet" src="{{ url('../images/weddingplanner.jpg') }}" class="shadow"></a>
                 </p>
         </div>
         <div class="col-md-9 specs">
@@ -311,15 +311,6 @@
             <li class="active"><a href="#section_awards"> Awards </a></li>
         </ul>
     </div>
-
-    <p class="info">The Spirit House food is best describ
-        <ul>
-            <li><a href="#section_restaurant"> Restaurant </a></li>
-            <li><a href="#section_bookonline"> Book Online </a></li>
-            <li><a href="#section_menu"> Menu </a></li>
-            <li><a href="#section_functions"> Functions </a></li>
-            <li class="active"><a href="#section_awards"> Awards </a></li>
-        </ul>
 </div>
 
 <p class="info">The Spirit House food is best described as contemporary Thai cuisine. With four best-selling cook books under our belt, and

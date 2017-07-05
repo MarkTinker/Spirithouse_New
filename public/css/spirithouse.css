@@ -1,93 +1,22 @@
-
 /*
 ********************
 
-Hompage CSS
+Common CSS
 
 ********************
 */
+a.visitpage {
+    color: #fff;
+}
+/*
+********************
 
+Top Nav Bar
 
-body {
-    font-family: "Georgia", serif;
-    font-size: 18px;
-    background: #e6e4cf;
-}
-
-p {
-    font-family: "Georgia", serif;
-    font-size: 18px;
-    line-height: 1.1em;
-    color: #424030;
-}
-hr {
-    border: none;
-    height: 2px;
-    background: #cfcdbd;
-    margin-bottom: 15px;
-}
-
-#topheader a {
-    color:#fff;
-}
-#topheader a:focus{
-    color:#fff;
-}
-label {
-    font-weight: 500;
-}
-
+********************
+*/
 #topheader {
     z-index: 99999;
-}
-
-#topheader.affix .logobackground{
-    display: none;
-}
-
-@media (max-width:1200px) {
-    #topheader.affix {
-        /*display: none;*/
-    }
-}
-#topheader.affix {
-    width: 100%;
-    top:0;
-}
-#topheader.affix .bigtitle{
-    display: none;
-}
-#topheader.affix nav{
-    height:50px;
-}
-#topheader.affix nav > .container:first-child {
-}
-
-#topheader .navbar-brand{
-    display:none;
-}
-@media (max-width: 320px) {
-    #topheader .navbar-brand{
-        display:block !important;
-    }
-}
-
-#topheader .navbar-brand {
-    width: 70%;
-    margin-left: 0;
-    margin-right: 0;
-}
-#topheader.affix .navbar-brand {
-    display:block;
-    width: 70%;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-@media (min-width: 767px) {
-    #topheader.affix .navbar-brand {
-        width: 100% !important;
-    }    
 }
 
 #topheader .navbar-imgcontainer {
@@ -113,7 +42,7 @@ label {
     }
 }
 .logobackground {
-    background: #e6e4cf url('../images/content_bg_yellownoise.gif') repeat;
+    background: url('../images/content_bg_yellownoise.gif') repeat;
     width:100%;
     margin: 0px;
     padding: 0px;
@@ -126,14 +55,13 @@ label {
 .navbar-default {
     border:none;
 }
-#toptitle {
-    background-color: #f8f8f8;
+#toptitle {    
     border-color: #e7e7e7;
-    background: #e6e4cf url(../images/content_bg_yellownoise2.gif) repeat;
+    background: url(../images/content_bg_yellownoise2.gif) repeat;
 }
 
 nav{
-    background: #e6e4cf url('../images/content_bg_yellownoise2.gif') repeat;
+    background: url('../images/content_bg_yellownoise2.gif') repeat;
     box-shadow: inset 0 0 20px rgba(0,0,0,.15);
     border-radius: 0px;
 }
@@ -143,10 +71,6 @@ nav > .container:first-child {
     background: rgba(0,0,0,.05);
     border-radius: 0px;
     text-align: center;
-}
-
-#topheader.affix nav > .container:first-child {
-    background: rgba(0,0,0,0) !important;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
@@ -210,6 +134,58 @@ nav > .container:first-child {
     color: #444;
     font-size: 18px;
     text-decoration: none;
+}
+
+#topheader.affix {
+    top:0;
+    width:100%;
+}
+
+#topheader .affix-bar {
+    display: none;
+}
+
+#topheader.affix .affix-bar {    
+    display: block;
+}
+#topheader.affix .normal-bar{
+    display: none;
+}
+#topheader .normal-bar{
+    display: block;
+}
+
+
+/*
+********************
+
+Hompage CSS
+
+********************
+*/
+
+
+body {
+    font-family: "Georgia", serif;
+    font-size: 18px;
+    background: #e6e4cf;
+}
+
+p {
+    font-family: "Georgia", serif;
+    font-size: 18px;
+    line-height: 1.1em;
+    color: #424030;
+}
+hr {
+    border: none;
+    height: 2px;
+    background: #cfcdbd;
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: 500;
 }
 
 .videoshow > h3 {
@@ -520,7 +496,7 @@ p.info {
     border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
 }
 
-.specs > ul {
+.specs  ul {
     list-style: none;
 }
 
@@ -534,7 +510,7 @@ p.info {
     text-transform: uppercase;
 }
 
-.specs > ul >  li {
+.specs  ul >  li {
     border-bottom: 1px solid #fff;
     color: #404040;
     float: left;

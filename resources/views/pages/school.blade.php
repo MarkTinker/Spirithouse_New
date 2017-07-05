@@ -32,13 +32,22 @@
     <br/>
     <br/>
 
-    <div class="section">
+    <div class="section" id="section_bookclass">
         <div class="row">
             <ul>
-                <li class="active"><a href="" > BOOK A CLASS </a></li>
+                <li class="active"><a href="#section_bookclass" > BOOK A CLASS </a></li>
             </ul>
         </div>
         <p class="info">Find a class that you like and click the <em>book now</em> button &mdash; it's that easy. </p>
+        <div class="row">
+            <div class="col-md-3 specs">
+                <div class="faq">
+                    <h2>Frequently Asked Questions</h2>
+                    @component('inc.faq')
+                    @endcomponent
+                </div>
+            </div>
+        </div>
     </div>
 
 @endsection
