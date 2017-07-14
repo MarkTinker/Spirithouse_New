@@ -46,7 +46,15 @@ class PagesController extends Controller
              ->orderBy('schedule.daynight')
              ->get();
         //return $schedules;
-        return view('pages.school');
+        $schedule = Array();
+        $old_class_year=0;
+        $old_class_month=0;
+        $old_class_day=0;
+
+        foreach($schedules as $sch){
+            
+        }
+        return view('pages.school')->withSchedules($schedules);
     }
  
     public function getShop()
