@@ -25,3 +25,4 @@ Route::get('/recipe', 'PagesController@getRecipe')->name('pages.recipe');
 Route::get('/newsletter', 'PagesController@getNewsletter')->name('pages.newsletter');
 Route::get('/privacy', 'PagesController@getPrivacy')->name('pages.privacy');
 Route::get('/download', 'DownloadController@getDownload')->name('download');
+Route::get('/book/{scheduleid}', 'PagesController@getBook')->name('pages.book');

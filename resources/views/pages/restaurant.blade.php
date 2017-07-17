@@ -202,7 +202,7 @@
                                 }
 
                                 if($menuprice > 0) {
-                                    $printprice = '<span class="gray" > &raquo; &#36;$menuprice </span>';
+                                    $printprice = '<span class="gray" > &raquo; &#36;'.$menuprice.' </span>';
                                 } else {
                                     $printprice = '';
                                 }

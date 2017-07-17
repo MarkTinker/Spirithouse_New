@@ -898,3 +898,220 @@ Voucher Page
 .labelccv {
     padding-top:10px;
 }
+
+/*
+********************
+
+School Page CSS
+
+*******************
+*/
+caption {
+    color: #353535;
+    font-family: 'LeagueGothicRegular';
+    font-size: 52px;
+    line-height: 1.09em;
+    text-align: center;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.75);
+    text-transform: uppercase;
+}
+
+table.school 
+{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+table.school th 
+{
+    font-family: 'LeagueGothicRegular';
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #646464;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #555;
+
+}
+table.school td, th 
+{
+	border: none;
+    text-align: left;
+    vertical-align: top;
+}
+table.school td
+{
+	padding: 10px 0 10px 0;
+}
+table.school b
+{
+	font-weight: bold;
+}
+table.school th.date_col
+{
+	width: 86px;
+}
+table.school th.nightday_col
+{
+	width: 100px;
+}
+table.school th.avail_col
+{
+	width: 140px;
+	text-align: right;
+}
+table.school td
+{
+	border-bottom: 1px dotted #999;
+}
+
+table.school .classblock
+{
+	text-decoration: none;
+	color: #444;
+	display: block;
+
+}
+table.school .classblock p
+{
+    margin: 0;
+    padding: 0;
+}
+table.school .classblock p.classname
+{
+    font-size: 1.3em;
+    color: #000;
+    line-height: .8em;
+}
+table.school .classblock p.info
+{
+    line-height: 1.5em;
+    color: #777;
+}
+table .classblock .mobile_links
+{
+    display: none;
+}
+
+table.school .classblock div.details
+{
+    line-height: 1.5em;
+}
+
+.details p 
+{ 
+    color: gray;
+    font-size: small;
+    font-weight: bold; 
+    } 
+
+
+table.school a.showdescription
+{
+    display: inline-block;	
+    font-size: 12px;
+    padding: 5px 10px 5px 10px;
+    background: #555;
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    border-radius: 4px;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.5);
+    font-family: sans-serif;
+    text-decoration: none;
+    line-height: 13px;
+    margin-top:2px;
+    border: 1px solid #444;
+    
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+
+}
+table.school a.showdescription:hover
+{
+    background: #b83d00;
+    border: 1px solid #581A00;
+}	
+
+table.school a.book, table.school a.waitlist
+{
+display: block;
+text-align: center;
+
+padding: 8px 13px 8px 13px;
+background: #48701d url('../images/navbutton_texture.png') center center repeat;
+color: #fff;
+border-radius: 4px;
+text-shadow: 1px 1px 0 rgba(0,0,0,0.5);
+font-style: italic;
+text-decoration: none;
+line-height: 17px;
+
+box-shadow: inset 0 0 10px rgba(0,0,0,0.6);
+
+-moz-transition: all .2s linear;
+-o-transition: all .2s linear;
+transition: all .2s linear;
+-webkit-transition: all .2s linear;
+
+}
+table.school a.waitlist
+{
+background-color: #555;
+}
+table.school a.book:hover, table.school a.waitlist:hover
+{
+background-color: #b83d00;
+}
+
+table.school .date
+{
+	width: 50px;
+	height: 70px;
+	border: 2px solid #581A00;
+	border-radius: 5px;
+	color: #555;
+	background: #FDFFE9;
+	margin-left: 6px;
+	box-shadow: inset 0 0 12px rgba(0,0,0,.2);
+}
+table.school .date .dw
+{
+    display: block;
+
+    text-align: center;
+    background: #b83d00;
+    border-radius: 2px 2px 0 0;
+    border-top: 1px solid #FB6E3E;
+    border-left: 1px solid #FB6E3E;
+    border-right: 1px solid #FB6E3E;
+    color: #fff;
+    height: 20px;
+    line-height: 20px;
+    font-size: 15px;
+    position: relative;
+
+}
+table.school .date .d
+{
+    display: block;	
+    font-size: 1.9em;	
+    width: 100%;
+    line-height: 1em;
+    text-align: center;
+    letter-spacing: -.05em;
+}
+table.school .date .m
+{
+    display: block;	
+    width: 100%;
+    text-align: center;
+    font-style: italic;	
+    font-size: .9em;	
+    line-height: 14px;
+}
+table.school .date.pad
+{
+    height: 165px;
+}

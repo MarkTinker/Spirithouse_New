@@ -40,40 +40,54 @@
             </ul>
         </div>
         <p class="info">Find a class that you like and click the <em>book now</em> button &mdash; it's that easy. </p>
-        @foreach($schedules as $schedule)
-        <div class="row">       
-            <div class="col-md-3 specs">
-                <div class="faq">
-                    <h2>Frequently Asked Questions</h2>
-                    @component('inc.faq')
-                    @endcomponent
-                </div>
-            </div>
-
-            <div class="col-md-9">
-                <div class="wrap">
-                    <div id="school_classes" class="subsection">
-                        <div class="inner">
-                            <table class="school">
-                                <caption> Classes for {{ date('F') }}</caption>
-                                <thead>
-                                    <tr class='header'>
-                                        <th class="date_col">Date </th>
-                                        <th> Class Information </th>
-                                        <th class="nightday_col"> Day / Night </th>
-                                        <th class="avail_col">Availability</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div> <!-- /.wrap-->
-            </div>
-        </div>
-        @endforeach
+        {!! $displaydata !!}
     </div>
 
+@endsection
+
+@section ('scripts')
+
+<script>
+    $(document).ready(function()
+    {
+        // Class Show/Hide Links
+        $(".classblock").each(classInfoShowHide);
+    });
+</script>
+<script>
+    /*======================================================================
+    jQueury Plugin
+    Class listing show/hide details
+    ----------------------------------------------------------------------*/
+
+    function classInfoShowHide( index, th ) 
+    {
+        var $me = $(th);
+        var showhide = $me.find("a.toggle");
+        var details = $me.find("div.details");
+        
+        $me.attr("state", "closed");
+        
+        showhide.bind('click',function(event)
+        {
+            event.preventDefault();		
+            
+            
+            
+            if ($me.attr("state") == "closed")
+            {			
+                $me.attr("state", "open");			
+                showhide.html("Hide &uarr;");
+            } else
+            {
+                $me.attr("state", "closed");
+                showhide.html("Details &darr;");
+            }		
+            
+            // Toggle
+            details.slideToggle('fast');
+                                
+        });
+    }
+</script>
 @endsection
