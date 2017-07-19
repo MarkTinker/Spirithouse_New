@@ -2,9 +2,13 @@
 
 @section('title', ': Restaurant & Cooking School - Cooking School')
 
-@section('pagetitle', 'Cooking School')
+@section('pagetitle')
+<h1>Cooking School</h1>
+@endsection
 
-@section('pagedescription', 'Learn tips, tricks from our great chefs.')
+@section('pagedescription')
+<p>Learn tips, tricks from our great chefs.</p>
+@endsection
 
 @section('content')
 

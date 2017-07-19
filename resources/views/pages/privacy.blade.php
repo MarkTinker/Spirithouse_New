@@ -2,9 +2,13 @@
 
 @section ('title', 'Privacy Policy')
 
-@section ('pagetitle', 'Privacy Policy')
+@section ('pagetitle')
+<h1>Privacy Policy</h1>
+@endsection
 
-@section ('pagedescription', 'What we do with your personal information')
+@section ('pagedescription')
+<p>What we do with your personal information</p>
+@endsection
 
 @section ('content')
 

@@ -56,7 +56,7 @@
 
 <div id="toptitle">
     <div class="bigtitle container">
-        <h1>@yield ('pagetitle')</h1>
-        <p>@yield ('pagedescription')</p>        
+        @yield ('pagetitle')
+        @yield ('pagedescription')    
     </div>
 </div>

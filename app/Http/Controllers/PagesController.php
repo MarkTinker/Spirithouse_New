@@ -397,8 +397,8 @@ class PagesController extends Controller
                                             </div>
                                         </td>
                                         <td class='nightday'>".$classtype."</td>
-                                        <td class='button'>
-                                            <a class='book' href='https://www.spirithouse.com.au/booking.php?".$discountlink." scheduleid=".$scheduleid."'>Book Now</a>
+                                        <td class='button'>                                            
+                                            <a class='book' href=".route('pages.book', $scheduleid).">Book Now</a>
                                             <div class='classblock'><p class='info'>".$seatsleft. $seattext." left </div>
                                         </td>
                         

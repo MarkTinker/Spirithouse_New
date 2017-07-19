@@ -2,9 +2,13 @@
 
 @section ('title', ' Recipes')
 
-@section ('pagetitle', 'Recipes for free')
+@section ('pagetitle')
+<h1>Recipes for free</h1>
+@endsection
 
-@section ('pagedescription', "they're free, what's not to love about that?")
+@section ('pagedescription')
+<p>they're free, what's not to love about that?</p>
+@endsection
 
 @section ('content')
 

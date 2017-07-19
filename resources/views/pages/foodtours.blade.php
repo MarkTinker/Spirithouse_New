@@ -2,9 +2,13 @@
 
 @section('title', ': Asian Food Tours')
 
-@section('pagetitle', 'Food Tours to Asia and India')
+@section('pagetitle')
+    <h1>Food Tours to Asia and India</h1>
+@endsection
 
-@section('pagedescription', "Don't book another tour without reading this")
+@section('pagedescription')
+    <p>Don't book another tour without reading this</p>
+@endsection
 
 @section('content')
 

@@ -2,9 +2,13 @@
 
 @section('title', ': Restaurant & Cooking School - Home')
 
-@section ('pagetitle', 'Prepare to be amazed')
+@section ('pagetitle')
+    <h1>Prepare to be amazed</h1>
+@endsection
 
-@section ('pagedescription', "Spirit House — one of Australia's Best Food Experiences — come find out why")
+@section ('pagedescription')
+    <p>Spirit House — one of Australia's Best Food Experiences — come find out why</p>
+@endsection
 
 @section('content')
     <!-- Main component for a primary marketing message or call to action -->

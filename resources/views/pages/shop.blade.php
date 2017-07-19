@@ -2,9 +2,13 @@
 
 @section('title', ': Restaurant & Cooking School - Online Shop')
 
-@section('pagetitle', 'Spirit House Shop')
+@section('pagetitle')
+<h1>Spirit House Shop</h1>
+@endsection
 
-@section('pagedescription', 'Buy recipes books and kitchen products online, delivered to your door.')
+@section('pagedescription')
+<p>Buy recipes books and kitchen products online, delivered to your door.</p>
+@endsection
 
 @section('content')
 

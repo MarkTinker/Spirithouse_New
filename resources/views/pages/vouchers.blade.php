@@ -2,9 +2,13 @@
 
 @section('title', ': Restaurant &amp; Cooking School &mdash; Gift Vouchers')
 
-@section('pagetitle', 'Make Someone Happy')
+@section('pagetitle')
+<h1>Make Someone Happy</h1>
+@endsection
 
-@section('pagedescription', 'Spirit House Gift Vouchers make the Perfect Gift.')
+@section('pagedescription')
+<p>Spirit House Gift Vouchers make the Perfect Gift.</p>
+@endsection
 
 @section('content')
     <div class="row">

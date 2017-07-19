@@ -2,9 +2,13 @@
 
 @section ('title', 'Newsletter')
 
-@section ('pagetitle', 'Fun Stuff and News')
+@section ('pagetitle')
+<h1>Fun Stuff and News</h1>
+@endsection
 
-@section ('pagedescription', '3 Fun-Filled Reasons to stay connected with Spirit House')
+@section ('pagedescription')
+<p>3 Fun-Filled Reasons to stay connected with Spirit House</p>
+@endsection
 
 @section ('content')
 

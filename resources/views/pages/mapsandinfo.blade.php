@@ -2,9 +2,13 @@
 
 @section ('title', '&mdash; Maps, accommodation, Transport.')
 
-@section ('pagetitle', 'Maps, Places to Stay')
+@section ('pagetitle')
+    <h1>Maps, Places to Stay</h1>
+@endsection
 
-@section ('pagedescription', 'Best accommodation close to Spirit House and how to get here')
+@section ('pagedescription')
+    <p>Best accommodation close to Spirit House and how to get here</p>
+@endsection
 
 @section ('content')
 
