@@ -56,7 +56,7 @@
 							<input type="text" name="firstname" id="firstname">
 
 							<label for="email">Email</label>
-							<input type="text" name="email" id="email" type='email' />
+							<input type="text" name="email" id="email" type="email" />
 
 							<label for="emailcheck">Confirm Email</label>
 							<input type="text" name="emailcheck" id="emailcheck" type='email' />
@@ -103,7 +103,7 @@
 							<label for="qty">I would like </label>
 							<select class='qty' name='qty' id='qty'>
                                 @for ($i = 1; $i <= 6; $i++)
-                                    <option value="{{$i}}" selected="selected" >{{$i}} Voucher</option>                                
+                                    <option value="{{$i}}" selected="selected" >{{$i}} Voucher</option>
                                 @endfor
                             </select>
                             <label for="amount">at </label>
