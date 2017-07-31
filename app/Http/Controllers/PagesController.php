@@ -7,6 +7,7 @@ use DB;
 use Illuminate\Http\Request;
 
 include(app_path().'/includes/class_functions.inc.php');
+include(app_path().'/includes/shipping.inc.php');
 
 class PagesController extends Controller
 {
@@ -534,7 +535,16 @@ class PagesController extends Controller
  
     public function getShop()
     {
-        return view('pages.shop');
+        $sql="select shop_items.*, categoryName
+            from `shop_items`, `shop_categoryxref`, `shop_categorytable`
+            where shop_items.itemid = shop_categoryxref.itemId
+            and shop_categoryxref.categoryId = shop_categorytable.categoryId
+            and shop_categorytable.categoryId > 5         
+            and shop_items.show=1 ORDER BY categoryName, itemid desc";
+
+        $shop_item = DB::select($sql);
+        $data['shop_item'] = $shop_item;
+        return view('pages.shop')->withData($data);
     }
 
     public function getVouchers()

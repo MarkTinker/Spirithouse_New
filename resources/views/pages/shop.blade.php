@@ -22,6 +22,33 @@
         </div>
     </div>
     <div class="col-md-8">
+    @foreach($data['shop_item'] as $key => $item)        
+        <div class="row">
+            <div class="col-md-4">
+                <form name="theForm{{ $key }}" method="post" class="jcart jcartitem">
+                    <fieldset>
+                        <input type="hidden" name="itemID" value="{{ $item->itemId }}">
+                        <input type="hidden" name="itemPrice" value="{{ $item->itemPrice }}">
+                        <input type="hidden" name="itemName" value="{{ $item->itemName }}">
+                        <input type="hidden" name="itemWeight" value="{{ $item->itemWeight }}">
+                        <ul>
+                            <li class="pic"> <img src="{{ url('images/products/'.$item->itemPic) }}"></li>
+                            <li><h2>{{ $item->itemName }}</h2></li>
+                            <li class="desc">{!! $item->itemDesc !!}</li>
+                            <li class="price">{{ number_format($item->itemPrice, 2) }}</li>
+                            <li class="addtocart">
+                                <label>
+                                    Qty:
+                                    <input type="text" name="itemQty" value="1" size="3">
+                                </label>
+                                <input type="submit" name="my-add-button" value="Add to Cart" class="button">
+                            </li>
+                        </ul>
+                    </fieldset>
+                </form>
+            </div><!-- /.col-md-4 -->
+        </div>
+    @endforeach
     </div>
 </div>
 

@@ -1167,3 +1167,26 @@ Book Page CSS
     text-shadow: 1px 1px 0 rgba(255,255,255,0.75);
     margin-bottom: 10px;
 }
+
+/*
+************************
+
+Shop Page
+
+***********************
+*/
+
+.jcart {
+    margin: 0 5px 5px 5px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.jcartitem {
+    border-radius: 5px;
+    background: rgba(255,255,255,1);
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.2), inset 0 0 15px #f3f3f3;
+}
