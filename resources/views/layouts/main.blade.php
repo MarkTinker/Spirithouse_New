@@ -14,7 +14,7 @@
 
                 @yield('content')
             
-            </div>
+            </div> <!-- /.container -->
 
                 @yield('content2') <!-- The contents of outside container -->
             @include('partials._footer')

@@ -1190,3 +1190,35 @@ Shop Page
     margin-bottom: 20px;
     box-shadow: 0 2px 10px rgba(0,0,0,.2), inset 0 0 15px #f3f3f3;
 }
+
+.jcart ul {
+    margin: 0;
+    list-style: none;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.jcartitem .pic {
+    text-align: center;
+}
+
+.jcart .price {
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.jcart .button {
+    margin-left: 21px;
+}
+
+.jcartitem .desc p {
+    font-size: 15px;
+    margin: 10px 0 0 0;
+}
+
+.jcartitem h2 {
+    font-family: 'LeagueGothicRegular';
+    font-size: 25px;
+    text-align: center;
+}

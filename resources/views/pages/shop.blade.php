@@ -17,13 +17,14 @@
 </div>
 <div class="row">
     <div class="col-md-4">
-        <h2>Shopping Cart</h4>
-        <div>
-        </div>
+        <h2>Shopping Cart</h4>        
     </div>
     <div class="col-md-8">
-    @foreach($data['shop_item'] as $key => $item)        
+    @foreach($data['shop_item'] as $key => $item)
+
+        @if($key % 3 == 0)
         <div class="row">
+        @endif
             <div class="col-md-4">
                 <form name="theForm{{ $key }}" method="post" class="jcart jcartitem">
                     <fieldset>
@@ -47,9 +48,11 @@
                     </fieldset>
                 </form>
             </div><!-- /.col-md-4 -->
+        @if(($key % 3 == 2) || ($key == count($data['shop_item'])))
         </div>
+        @endif
     @endforeach
-    </div>
-</div>
+    </div> <!-- /.col-md-8 -->
+</div> <!-- /.row -->
 
 @endsection
