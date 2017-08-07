@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use DB;
 use Illuminate\Http\Request;
+
+include(app_path().'/includes/class_functions.inc.php');
 
 class SchoolController extends Controller
 {
@@ -78,5 +81,53 @@ class SchoolController extends Controller
             $data['emaildescription'] = $emaildescription;
             return view('school.book')->withData($data);
         }
+    }
+
+    public function getWaitlist($scheduleid)
+    {
+        $waitlist = DB::table('classes')->select('classes.classid', 'classes.classname', 'classes.classdescription', 'classes.classprice', 'classes.classseats',
+        'schedule.scheduleid', 'schedule.full', 'schedule.bookings', 'schedule.discount', 'schedule.scheduleseats', 'schedule.scheduledate', 'schedule.scheduleseats')
+        ->leftJoin('schedule as schedule', 'schedule.classid','=', 'classes.classid')
+        ->where('schedule.scheduleid','=', $scheduleid)->get();
+
+        $data=[];
+
+        if($waitlist != null)
+        {
+            $data['bookings'] = $waitlist[0]->bookings;
+            $data['classname'] = $waitlist[0]->classname;
+            $data['classdescription'] = $waitlist[0]->classdescription;
+            $data['classprice'] = $waitlist[0]->classprice;
+            $data['classdate'] = date('d/m/y', strtotime($waitlist[0]->scheduledate));
+            $data['scheduleid'] = $waitlist[0]->scheduleid;
+
+            if($waitlist[0]->scheduleseats > 0)
+            {
+                $maxseats =	$waitlist[0]->scheduleseats;
+            }
+            else
+            {
+                $maxseats = $waitlist[0]->classseats;
+            }
+
+            $spotsleft = $maxseats - $data['bookings'];
+            $data['spotsleft'] = $spotsleft;
+
+            $classname=strip_classname($data['classname']);	            
+            $printdescription = split_classdescription($data['classdescription'] );
+
+            $data['classname'] = $classname;
+            $data['printdescription'] = $printdescription;
+
+            $description= $printdescription[0];
+            $recipes= $printdescription[1];
+            $printrecipes= str_replace("*", "<li class='wide'>", $recipes); // replace asterisk with LI
+            
+            $data['description'] = $description;
+            $data['recipes'] = $recipes;
+            $data['printrecipes'] = $printrecipes;
+        }
+
+        return view('school.waitlist')->withData($data);
     }
 }

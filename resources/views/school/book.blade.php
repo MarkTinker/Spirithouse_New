@@ -3,6 +3,7 @@
 @section('title', ': Class Booking form for {{ $data["classname"] }}')
 
 @section('content')
+
 <div class="section">
     <div class="row">
         <div id="warning" class="col-md-12 info hidden">

@@ -26,3 +26,4 @@ Route::get('/newsletter', 'PagesController@getNewsletter')->name('pages.newslett
 Route::get('/privacy', 'PagesController@getPrivacy')->name('pages.privacy');
 Route::get('/download', 'DownloadController@getDownload')->name('download');
 Route::get('/book/{scheduleid}', 'SchoolController@getBook')->name('pages.book');
+Route::get('/waitlist/{scheduleid}', 'SchoolController@getWaitlist')->name('school.waitlist');

@@ -360,7 +360,7 @@ class PagesController extends Controller
                                                 <p class='classname'>".$class."</p>
                                                 <p class='info'>No Seats Available 
                                                     <span class='mobile_links'>
-                                                        <a href='school-waitlist.php?scheduleid=".$scheduleid."'><small>Join Waitlist</small></a> / 
+                                                        <a href='".route('school.waitlist', $scheduleid)."'><small>Join Waitlist</small></a> / 
                                                         <a href='#' class='toggle'>Details &darr;</a>
                                                     </span>
                                                 </p>
@@ -375,7 +375,7 @@ class PagesController extends Controller
                                         </td>
                                         <td class='nightday'>".$classtype."</td>
                                         <td class='button'>
-                                            <a class='waitlist' href='school-waitlist.php?scheduleid=".$scheduleid."'>Join Waitlist</a>
+                                            <a class='waitlist' href='".route('school.waitlist', $scheduleid)."'>Join Waitlist</a>
                                             <div class='classblock'> <p class='info'>Class Full </div>
                                         </td>
                         </tr>	
@@ -393,7 +393,7 @@ class PagesController extends Controller
                                                 <p class='classname'>".$class."</p>
                                                 <p class='info'>".$discounttext."</p>
                                                     <span class='mobile_links'>
-                                                        <a href='https://www.spirithouse.com.au/booking.php?scheduleid=".$scheduleid."'>
+                                                        <a href='".route('pages.book', $scheduleid)."'>
                                                         Book Now</a> /
                                                         <a href='#' class='toggle'>Details &darr;</a>
                                                     </span>
