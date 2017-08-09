@@ -12,6 +12,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/admin.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -29,14 +30,23 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }} : Admin
+                        {{ config('app.name', 'Laravel') }}
                     </a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                        &nbsp;
+                        <li class="{{ url(Request::path()) == route('admin.index') ? 'active' : '' }}"> <a href="{{ route('admin.index') }}">Classes</a></li>
+                        <li class="{{ url(Request::path()) == route('admin.cert') ? 'active' : '' }}"> <a href="{{ route('admin.cert') }}">Gift Certificates</a></li>
+                        <li class="{{ url(Request::path()) == route('admin.credits') ? 'active' : '' }}"> <a href="{{ route('admin.credits') }}" >Credits</a></li>
+                        <li class="{{ url(Request::path()) == route('admin.vip') ? 'active' : '' }}" > <a href="{{ route('admin.vip') }}" >VIP process</a></li>
+                        <li class="{{ url(Request::path()) == route('admin.maillist') ? 'active' : '' }}"> <a href="{{ route('admin.maillist') }}">Mail Lists</a></li>
+                        <li class="{{ url(Request::path()) == route('admin.viewmenu') ? 'active' : '' }}"> <a href="{{ route('admin.viewmenu') }}">Menu</a></li>
+                        <li class="{{ url(Request::path()) == route('admin.viewstock') ? 'active' : '' }}"> <a href="{{ route('admin.viewstock') }}">Stockists</a></li>
+                        <li class="{{ url(Request::path()) == route('admin.viewwines') ? 'active' : '' }}" > <a href="{{ route('admin.viewwines') }}">Wines</a></li>
+                        <li class="{{ url(Request::path()) == route('admin.viewnewsletter') ? 'active' : '' }}"> <a href="{{ route('admin.viewnewsletter') }}" >Newsletter</a></li>
+                        <li  class="{{ url(Request::path()) == route('admin.viewproducts') ? 'active' : '' }}" > <a href="{{ route('admin.viewproducts') }}">Products</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -75,5 +85,7 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+
+    @yield('scripts')
 </body>
 </html>
