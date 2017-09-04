@@ -5,12 +5,14 @@ namespace App\Http\Controllers;
 use App\Menu;
 use DB;
 use Illuminate\Http\Request;
-
-include(app_path().'/includes/class_functions.inc.php');
-include(app_path().'/includes/shipping.inc.php');
+use App\Http\Traits\CommonTrait;
+use App\Http\Traits\ShippingTrait;
 
 class PagesController extends Controller
 {
+    use CommonTrait;
+    use ShippingTrait;
+
     public function getIndex()
     {
         return view('pages.home');

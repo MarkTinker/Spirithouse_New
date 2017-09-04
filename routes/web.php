@@ -30,13 +30,14 @@ Route::get('/waitlist/{scheduleid}', 'SchoolController@getWaitlist')->name('scho
 
 
 /* Admin Controller */
-Route::get('/admin', 'AdminController@getIndex')->name('admin.index');
-Route::get('/admin/viewcerts', 'AdminController@getViewcerts')->name('admin.cert');
-Route::get('/admin/credits', 'AdminController@getCredits')->name('admin.credits');
-Route::get('/admin/vip', 'AdminController@getVip')->name('admin.vip');
-Route::get('/admin/maillist', 'AdminController@getMaillist')->name('admin.maillist');
-Route::get('/admin/viewmenu', 'AdminController@getViewmenu')->name('admin.viewmenu');
-Route::get('/admin/viewstock', 'AdminController@getViewstock')->name('admin.viewstock');
-Route::get('/admin/viewwines', 'AdminController@getViewwine')->name('admin.viewwines');
-Route::get('/admin/viewnewsletter', 'AdminController@getViewnewsletter')->name('admin.viewnewsletter');
-Route::get('/admin/viewproducts', 'AdminController@getViewproducts')->name('admin.viewproducts');
+Route::get('/admin', 'Admin\AdminController@getIndex')->name('admin.index');
+Route::resource('/admin/classes', 'Admin\ClassesController');
+Route::get('/admin/viewcerts', 'Admin\AdminController@getViewcerts')->name('admin.cert');
+Route::get('/admin/credits', 'Admin\AdminController@getCredits')->name('admin.credits');
+Route::get('/admin/vip', 'Admin\AdminController@getVip')->name('admin.vip');
+Route::get('/admin/maillist', 'Admin\AdminController@getMaillist')->name('admin.maillist');
+Route::get('/admin/viewmenu', 'Admin\AdminController@getViewmenu')->name('admin.viewmenu');
+Route::get('/admin/viewstock', 'Admin\AdminController@getViewstock')->name('admin.viewstock');
+Route::get('/admin/viewwines', 'Admin\AdminController@getViewwine')->name('admin.viewwines');
+Route::get('/admin/viewnewsletter', 'Admin\AdminController@getViewnewsletter')->name('admin.viewnewsletter');
+Route::get('/admin/viewproducts', 'Admin\AdminController@getViewproducts')->name('admin.viewproducts');

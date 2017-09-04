@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use DB;
 
@@ -19,13 +20,7 @@ class AdminController extends Controller
 
     public function getIndex()
     {
-        $yesterday = date("Ymd", strtotime("-1 days"));        
-        $sql="select scheduleid, schedule.classid, date_format(scheduledate, '%W %d %M %y') as date2,
-            date_format(scheduledate, '%W') as dayname, classname, full, bookings, classseats, daynight, discount, discount_price, discountclassprice, scheduleseats 
-            from schedule, classes where schedule.classid=classes.classid and scheduledate > ".$yesterday." order by scheduledate, daynight" ;
-        $classes = DB::select($sql);
-        //dd($sql);        
-        return view('admin.index')->withData($classes);
+        
     }
 
     public function getViewcerts()

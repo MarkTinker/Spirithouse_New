@@ -4,11 +4,11 @@ namespace App\Http\Controllers;
 
 use DB;
 use Illuminate\Http\Request;
-
-include(app_path().'/includes/class_functions.inc.php');
+use App\Http\Traits\CommonTrait;
 
 class SchoolController extends Controller
 {
+    use CommonTrait;
     public function getBook($scheduleid)
     {
         $schedule = DB::table('classes')->select('classes.classid', 'classes.classname', 'classes.classdescription', 'classes.classprice', 'classes.classseats', 

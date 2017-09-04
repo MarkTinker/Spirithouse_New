@@ -1,4 +1,7 @@
 <?php
+namespace App\Http\Traits;
+
+trait CommonTrait {
     function strip_classname($classname){
         if ($classname[0]=='*'){$classname= substr($classname,1);} //strip the * off the front of the classnames
         return $classname;
@@ -32,4 +35,6 @@
         $result = array($description, $recipes);
         return $result;
 	}
+}
+    
 ?>
