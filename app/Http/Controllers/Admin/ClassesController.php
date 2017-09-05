@@ -5,10 +5,13 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use DB;
-
+use App\CClass;
+use App\Http\Traits\CommonTrait;
 
 class ClassesController extends Controller
 {
+    use CommonTrait;
+
     /**
      * Display a listing of the resource.
      *
@@ -32,7 +35,12 @@ class ClassesController extends Controller
      */
     public function create()
     {
-        //
+        // Get Classes Data 
+
+        $data = [];
+        $data['classes'] = CClass::orderBy('classname')->get();
+        $data['rendered_classdate'] = $this->DateSelectBox("date",date("d"), date("m"), date("Y"), 50, 65, 70);
+        return view('admin.classes.create')->withData($data);
     }
 
     /**

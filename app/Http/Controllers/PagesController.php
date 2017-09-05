@@ -35,7 +35,7 @@ class PagesController extends Controller
         $date_diff = abs(strtotime(date('y-m-d'))-strtotime($digest_date)) / 86400;
 
         ###### FAQ used in the calendar ######
-        $faq= faq_section();
+        $faq= $this->faq_section();
 
         /*
         $sql="select scheduleid, classname, classdescription, classseats, classprice, starttime, discount, discount_price, DATE_FORMAT(scheduledate, '%Y') as year,
@@ -80,7 +80,7 @@ class PagesController extends Controller
             $starttime          = $sch->starttime;
             $daynight           = $sch->daynight;
 
-            $classname=strip_classname($classname);
+            $classname = $this->strip_classname($classname);
 
             # checking to see if class seats is being over-ridden by the scheduled amount of seats
             # we can override the default classseats in the schedule now - this checks to see
@@ -342,7 +342,7 @@ class PagesController extends Controller
                     
                 
                 ###################### SPLITTING THE CLASS DESCRIPTION  ###################
-                $printdescription = split_classdescription($classdescription);
+                $printdescription = $this->split_classdescription($classdescription);
                 $description= $printdescription[0]. "<br/><b>Recipes include:</b>";
                 $recipes= $printdescription[1];
                 $printrecipes= str_replace("*", "<hr> <p>", $recipes); // replace asterisk with <hr>and <p> for styling

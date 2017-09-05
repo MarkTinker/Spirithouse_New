@@ -2,7 +2,7 @@
 namespace App\Http\Traits;
 
 trait ShippingTrait {
-	function calc_shipping($weight,$destination_postcode) {	
+	public function calc_shipping($weight,$destination_postcode) {	
 		$qs = 'Height=150&';
 		$qs .= 'Length=150&';
 		$qs .= 'Width=15&';

@@ -5,7 +5,7 @@
 <h3 class="text-center" > View Classes </h3>
 <h4 class="text-center"> {{ date("Y-m-d", strtotime("-1 days")) }}</h4>
 <div class="row text-center">
-    <a href="">Add Class to Schedule</a> |
+    <a href="{{ route('classes.create') }}">Add Class to Schedule</a> |
     <a href="">Add a NEW Class</a> |
     <a href="">Edit Classes</a> |
     <a href="">Search Classes</a> |

@@ -20,7 +20,8 @@ class AdminController extends Controller
 
     public function getIndex()
     {
-        
+        // Redirect to view class action
+        return redirect()->route('classes.index');
     }
 
     public function getViewcerts()
