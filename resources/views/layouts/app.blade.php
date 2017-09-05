@@ -11,8 +11,11 @@
     <title>{{ config('app.name', 'Laravel') }} : Admin Page</title>
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">    
     <link href="{{ asset('css/admin.css') }}" rel="stylesheet">
+
+    @yield('stylesheets')
 </head>
 <body>
     <div id="app">

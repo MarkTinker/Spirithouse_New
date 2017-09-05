@@ -38,7 +38,7 @@ class ClassesController extends Controller
         // Get Classes Data 
 
         $data = [];
-        $data['classes'] = CClass::orderBy('classname')->get();
+        $data['classes'] = CClass::orderBy('classname')->get();        
         $data['rendered_classdate'] = $this->DateSelectBox("date",date("d"), date("m"), date("Y"), 50, 65, 70);
         return view('admin.classes.create')->withData($data);
     }

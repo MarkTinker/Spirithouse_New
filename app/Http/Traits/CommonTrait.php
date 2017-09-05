@@ -66,7 +66,8 @@ trait CommonTrait {
         if(strlen($defaultm)==0) { $defaulty=date("m"); }
         if(strlen($defaultd)==0) { $defaulty=date("d"); }
     
-        $ressz .= "<select name='".$inputname."_d' style='width: ".$widthd."px'>";
+        //$ressz .= "<select name='".$inputname."_d' style='width: ".$widthd."px'>";
+        $ressz .= "<select name='".$inputname."_d'  class='form-control col-md-4'>";
         for($i=1;$i<32;$i++) {
             $ressz .= "<option ";
             if($i==$defaultd) { $ressz .= " SELECTED "; }
@@ -74,7 +75,7 @@ trait CommonTrait {
         }
         $ressz .= "</select> ";
     
-        $ressz .= "<select name='".$inputname."_m' style='width: ".$widthm."px'>";
+        $ressz .= "<select name='".$inputname."_m' class='form-control col-md-4' >";
         for($i=1;$i<13;$i++) {
             $ressz .= "<option ";
             if($i==$defaultm) { $ressz .= " SELECTED "; }
@@ -82,13 +83,14 @@ trait CommonTrait {
         }
         $ressz .= "</select> ";
     
-        $ressz .= "<select name='".$inputname."_y' style='width: ".$widthy."px'>";
+        $ressz .= "<select name='".$inputname."_y' class='form-control col-md-4'>";
         for($i=2013;$i<2018;$i++) {
             $ressz .= "<option ";
             if($i==$defaulty) { $ressz .= " SELECTED "; }
             $ressz .= "value='$i'>$i</OPTION>";
         }
         $ressz .= "</select>";
+        return $ressz;
     }
 }
     
