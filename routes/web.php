@@ -31,7 +31,13 @@ Route::get('/waitlist/{scheduleid}', 'SchoolController@getWaitlist')->name('scho
 
 /* Admin Controller */
 Route::get('/admin', 'Admin\AdminController@getIndex')->name('admin.index');
+
+// Classes Controller
 Route::resource('/admin/classes', 'Admin\ClassesController');
+
+// Schedule Controller
+Route::resource('/admin/schedule', 'Admin\ScheduleController');
+
 Route::get('/admin/viewcerts', 'Admin\AdminController@getViewcerts')->name('admin.cert');
 Route::get('/admin/credits', 'Admin\AdminController@getCredits')->name('admin.credits');
 Route::get('/admin/vip', 'Admin\AdminController@getVip')->name('admin.vip');

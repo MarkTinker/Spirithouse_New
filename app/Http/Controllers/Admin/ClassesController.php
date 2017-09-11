@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use DB;
 use App\CClass;
 use App\Http\Traits\CommonTrait;
+use App\Schedule;
 
 class ClassesController extends Controller
 {
@@ -19,13 +20,7 @@ class ClassesController extends Controller
      */
     public function index()
     {
-        $yesterday = date("Ymd", strtotime("-1 days"));        
-        $sql="select scheduleid, schedule.classid, date_format(scheduledate, '%W %d %M %y') as date2,
-            date_format(scheduledate, '%W') as dayname, classname, full, bookings, classseats, daynight, discount, discount_price, discountclassprice, scheduleseats 
-            from schedule, classes where schedule.classid=classes.classid and scheduledate > ".$yesterday." order by scheduledate, daynight" ;
-        $classes = DB::select($sql);
-        //dd($sql);        
-        return view('admin.classes.index')->withData($classes);
+        return view('admin.classes.index');
     }
 
     /**
@@ -35,14 +30,10 @@ class ClassesController extends Controller
      */
     public function create()
     {
-        // Get Classes Data 
-
-        $data = [];
-        $data['classes'] = CClass::orderBy('classname')->get();        
-        $data['rendered_classdate'] = $this->DateSelectBox("date",date("d"), date("m"), date("Y"), 50, 65, 70);
-        return view('admin.classes.create')->withData($data);
+        return view('admin.classes.create');
     }
 
+    
     /**
      * Store a newly created resource in storage.
      *
@@ -51,7 +42,7 @@ class ClassesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
     }
 
     /**

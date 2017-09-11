@@ -21,6 +21,8 @@
     <div id="app">
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
+
+                @include('partials._messages')
                 <div class="navbar-header">
 
                     <!-- Collapsed Hamburger -->

@@ -21,7 +21,7 @@ class AdminController extends Controller
     public function getIndex()
     {
         // Redirect to view class action
-        return redirect()->route('classes.index');
+        return redirect()->route('schedule.index');
     }
 
     public function getViewcerts()
