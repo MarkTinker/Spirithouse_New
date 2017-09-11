@@ -33,6 +33,7 @@ Route::get('/waitlist/{scheduleid}', 'SchoolController@getWaitlist')->name('scho
 Route::get('/admin', 'Admin\AdminController@getIndex')->name('admin.index');
 
 // Classes Controller
+Route::get('/admin/classes/editclass', 'Admin\ClassesController@getShowEditlist')->name('classes.showeditlist');
 Route::resource('/admin/classes', 'Admin\ClassesController');
 
 // Schedule Controller

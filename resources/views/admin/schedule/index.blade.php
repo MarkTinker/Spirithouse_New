@@ -6,8 +6,8 @@
 <h4 class="text-center"> {{ date("Y-m-d", strtotime("-1 days")) }}</h4>
 <div class="row text-center">
     <a href="{{ route('schedule.create') }}">Add Class to Schedule</a> |
-    <a href="">Add a NEW Class</a> |
-    <a href="">Edit Classes</a> |
+    <a href="{{ route('classes.create') }}">Add a New Class</a> |
+    <a href="{{ route('classes.showeditlist') }}">Edit Classes</a> |
     <a href="">Search Classes</a> |
     <a href="">eWay Admin</a> |
     <a href="">Save Bookings</a>

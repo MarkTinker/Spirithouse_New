@@ -69,6 +69,9 @@ class ScheduleController extends Controller
         $schedule->starttime = $request->starttime;
         $schedule->maxseats = $request->maxseats;
         $schedule->save();
+
+        Session::flash('success', 'Schedule added successfully');
+        return redirect()->route('admin.classes.index');
     }
 
     /**

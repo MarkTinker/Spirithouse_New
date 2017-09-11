@@ -86,6 +86,13 @@
         </nav>
 
         @yield('content')
+
+    </div>
+
+    <div class="clearfix"></div>
+    <div class="row">
+        <hr>
+        <p class="text-center">Copyright 2017 Spirit House. All rights reserved.</p>
     </div>
 
     <!-- Scripts -->
