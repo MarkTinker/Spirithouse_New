@@ -180,7 +180,6 @@ class ClassesController extends Controller
 
         
         $result = DB::select($sql);
-        dd($result);
 
         $data['field'] = $field;
         $data['find'] = $find;

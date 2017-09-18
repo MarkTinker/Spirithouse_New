@@ -13,14 +13,14 @@
         <th>Attendee</th>
         <th>Credits</th>
     </tr>
-    {!! $totalseats = 0 !!}
+    <?php $totalseats = 0 ?>
     @foreach($data['result'] as $row)
     {!! $totalseats += $row->seats !!}
     <tr align="left">
         <td> {{ $row->scheduledate < date('Y-m-d') ? 'old' : 'click>>'}}</td>
-        <td> <a href="{{}}">{{ $row->classdate}}</a></td>
+        <td> <a href="">{{ $row->classdate}}</a></td>
         <td> {{ $row->classname }} </td>
-        <td> <a href="{{ $row->firstname.' '.$row->lastname }}"></a></td>
+        <td> <a href="">{{ $row->firstname.' '.$row->lastname }}</a></td>
         <td>{{ $row->credits }}&nbsp;</td>
     </tr>
     @endforeach
@@ -45,7 +45,9 @@
         <th>Notes</th>
         <th>Delete</th>
     </tr>
-    {!! $totalseats = 0; !!}
+    
+    <?php $totalseats = 0; ?>
+    
     @foreach($data['result'] as $row)
     <tr align="left">
         <td> {{ $row->scheduledate < date('Y-m-d') ? 'old' : 'click>>'}}</td>
@@ -62,7 +64,7 @@
     <tr>
         <td colspan="5"></td><td>{{ $totalseats }}</td>
         <td></td>
-        <td>@nbsp;</td>
+        <td>&nbsp;</td>
         <td><input type="submit" name="submit" value="Delete"</td>
     </tr>
 </table>
