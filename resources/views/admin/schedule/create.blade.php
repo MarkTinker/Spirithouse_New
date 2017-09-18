@@ -9,6 +9,7 @@
 @section ('content')
 
 <form method="POST" action="{{ route('schedule.store') }}" class="col-md-offset-2 col-md-8">
+    {{ csrf_field() }}
     <div class="form-group col-md-5">
         <label class="control-label" for="classname"> Class to add</label>
         <select class="form-control" name="classid" id="classname">

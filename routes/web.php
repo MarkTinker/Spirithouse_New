@@ -34,6 +34,8 @@ Route::get('/admin', 'Admin\AdminController@getIndex')->name('admin.index');
 
 // Classes Controller
 Route::get('/admin/classes/editclass', 'Admin\ClassesController@getShowEditlist')->name('classes.showeditlist');
+Route::get('/admin/classes/search', 'Admin\ClassesController@getSearchView')->name('classes.searchview');
+Route::post('/admin/classes/search', 'Admin\ClassesController@postSearch')->name('classes.search');
 Route::resource('/admin/classes', 'Admin\ClassesController');
 
 // Schedule Controller

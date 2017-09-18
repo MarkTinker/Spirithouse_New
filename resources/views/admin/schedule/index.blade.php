@@ -8,13 +8,14 @@
     <a href="{{ route('schedule.create') }}">Add Class to Schedule</a> |
     <a href="{{ route('classes.create') }}">Add a New Class</a> |
     <a href="{{ route('classes.showeditlist') }}">Edit Classes</a> |
-    <a href="">Search Classes</a> |
+    <a href="{{ route('classes.searchview') }}">Search Classes</a> |
     <a href="">eWay Admin</a> |
     <a href="">Save Bookings</a>
 </div>
 <hr/>
 
 <form action="" method="post" class=" col-md-offset-2 col-md-8">
+    {{ csrf_field() }}
     <table class="table">
         <tr>
             <th>Date</th>

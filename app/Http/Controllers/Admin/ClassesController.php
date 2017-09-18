@@ -143,6 +143,51 @@ class ClassesController extends Controller
         return view('admin.classes.showeditlist')->withData($data);
     }
 
+    /**
+     * Show a Search View
+     *
+     *
+     * @return \Illuminate\Http\Response
+     */
+    
+    public function getSearchView()
+    {
+        return view('admin.classes.search');
+    }
+
+    /**
+     * Search Function
+     *
+     *
+     */
+    
+    public function postSearch(Request $request)
+    {
+        // Perfom a bit of filtering
+        $find = strtoupper($request->find);
+        $find = strip_tags($find);
+        $find = trim($find);
+
+        $field = $request->field;
+
+        $sql = "select bookingid, bookings.scheduleid, firstname, lastname, email, classes.classid, classname, scheduledate, date_format(scheduledate, '%d %M %y') as classdate, seats, nametags, phone, `notes`, `credits`
+        from bookings
+        left join schedule
+        on bookings.scheduleid=schedule.scheduleid
+        left join classes
+        on schedule.classid=classes.classid
+        where bookings .$field LIKE \"%".$find."%\" order by scheduledate";
+
+        
+        $result = DB::select($sql);
+        dd($result);
+
+        $data['field'] = $field;
+        $data['find'] = $find;
+        $data['result'] = $result;
+        return view('admin.classes.searchresult')->withData($data);
+    }
+
 
     /**
      * Update the specified resource in storage.

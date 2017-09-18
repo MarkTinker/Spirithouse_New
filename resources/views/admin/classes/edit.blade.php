@@ -20,6 +20,7 @@
     
     <form action="{{ route('classes.update', $data['editclassinfo']['classid']) }}" method="POST">    
     {{ method_field('PUT') }}
+    {{ csrf_field() }}
         <div class="form-group">
             <label class="control-label">Class name</label>
             <input type="text" name="classname" class="form-control" value="{{ $data['editclassinfo']['classname'] }}">

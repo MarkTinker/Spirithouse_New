@@ -5,6 +5,7 @@
 <h3 class="text-center"> Add class</h3>
 
 <form method="POST" action="{{ route('classes.store') }}" class="col-md-4 col-md-offset-4">
+    {{ csrf_field() }}
     <div class="form-group">
         <label class="control-label" for="classname">Class name</label>
         <input id="classname" class="form-control" name="classname">
