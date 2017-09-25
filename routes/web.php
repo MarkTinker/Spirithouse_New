@@ -41,12 +41,10 @@ Route::resource('/admin/classes', 'Admin\ClassesController');
 // Schedule Controller
 Route::resource('/admin/schedule', 'Admin\ScheduleController');
 
+// Booking Controller
+Route::get('/admin/booking/report', 'Admin\BookingController@getReport');
+Route::resource('/admin/booking', 'Admin\BookingController');
+
 Route::get('/admin/viewcerts', 'Admin\AdminController@getViewcerts')->name('admin.cert');
 Route::get('/admin/credits', 'Admin\AdminController@getCredits')->name('admin.credits');
-Route::get('/admin/vip', 'Admin\AdminController@getVip')->name('admin.vip');
-Route::get('/admin/maillist', 'Admin\AdminController@getMaillist')->name('admin.maillist');
-Route::get('/admin/viewmenu', 'Admin\AdminController@getViewmenu')->name('admin.viewmenu');
-Route::get('/admin/viewstock', 'Admin\AdminController@getViewstock')->name('admin.viewstock');
-Route::get('/admin/viewwines', 'Admin\AdminController@getViewwine')->name('admin.viewwines');
 Route::get('/admin/viewnewsletter', 'Admin\AdminController@getViewnewsletter')->name('admin.viewnewsletter');
-Route::get('/admin/viewproducts', 'Admin\AdminController@getViewproducts')->name('admin.viewproducts');

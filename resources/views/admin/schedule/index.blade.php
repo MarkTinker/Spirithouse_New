@@ -9,8 +9,8 @@
     <a href="{{ route('classes.create') }}">Add a New Class</a> |
     <a href="{{ route('classes.showeditlist') }}">Edit Classes</a> |
     <a href="{{ route('classes.searchview') }}">Search Classes</a> |
-    <a href="">eWay Admin</a> |
-    <a href="">Save Bookings</a>
+    <a href="http://www.eway.com.au">eWay Admin</a> |
+    <a href="{{ route('booking.save') }}">Save Bookings</a>
 </div>
 <hr/>
 

@@ -45,13 +45,7 @@
                         <li class="{{ url(Request::path()) == route('admin.index') ? 'active' : '' }}"> <a href="{{ route('admin.index') }}">Classes</a></li>
                         <li class="{{ url(Request::path()) == route('admin.cert') ? 'active' : '' }}"> <a href="{{ route('admin.cert') }}">Gift Certificates</a></li>
                         <li class="{{ url(Request::path()) == route('admin.credits') ? 'active' : '' }}"> <a href="{{ route('admin.credits') }}" >Credits</a></li>
-                        <li class="{{ url(Request::path()) == route('admin.vip') ? 'active' : '' }}" > <a href="{{ route('admin.vip') }}" >VIP process</a></li>
-                        <li class="{{ url(Request::path()) == route('admin.maillist') ? 'active' : '' }}"> <a href="{{ route('admin.maillist') }}">Mail Lists</a></li>
-                        <li class="{{ url(Request::path()) == route('admin.viewmenu') ? 'active' : '' }}"> <a href="{{ route('admin.viewmenu') }}">Menu</a></li>
-                        <li class="{{ url(Request::path()) == route('admin.viewstock') ? 'active' : '' }}"> <a href="{{ route('admin.viewstock') }}">Stockists</a></li>
-                        <li class="{{ url(Request::path()) == route('admin.viewwines') ? 'active' : '' }}" > <a href="{{ route('admin.viewwines') }}">Wines</a></li>
                         <li class="{{ url(Request::path()) == route('admin.viewnewsletter') ? 'active' : '' }}"> <a href="{{ route('admin.viewnewsletter') }}" >Newsletter</a></li>
-                        <li  class="{{ url(Request::path()) == route('admin.viewproducts') ? 'active' : '' }}" > <a href="{{ route('admin.viewproducts') }}">Products</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
