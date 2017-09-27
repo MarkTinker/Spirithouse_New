@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use DB;
 
 class BookingController extends Controller
 {
@@ -92,5 +93,25 @@ class BookingController extends Controller
     {
         include(app_path(). '\functions\Spreadsheet\Excel\Writer.php');
         $workbook = new Spreadsheet_Excel_Writer();
+    }
+
+    /**
+     * View Bookings for the class
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function getViewbooking($id)
+    {
+        $sql="select bookingid, firstname, lastname, email, classes.classid, classes.classprice, classname, classseats, schedule.scheduleseats, date_format(scheduledate, '%d %M %y') as date2, seats, nametags, `vip`, phone, `notes`
+        from bookings
+        left join schedule
+        on bookings.scheduleid=schedule.scheduleid
+        left join classes
+        on schedule.classid=classes.classid
+        where bookings.scheduleid=".quote_smart($id);
+
+        $bookings = DB::select($sql);
+
+        dd($bookings);
     }
 }

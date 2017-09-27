@@ -43,8 +43,10 @@ Route::resource('/admin/schedule', 'Admin\ScheduleController');
 
 // Booking Controller
 Route::get('/admin/booking/report', 'Admin\BookingController@getReport')->name('booking.save');
+Route::get('/admin/viewbooking/{id}','Admin\BookingController@getViewbooking')
 Route::resource('/admin/booking', 'Admin\BookingController');
 
+// Other Parts
 Route::get('/admin/viewcerts', 'Admin\AdminController@getViewcerts')->name('admin.cert');
 Route::get('/admin/credits', 'Admin\AdminController@getCredits')->name('admin.credits');
 Route::get('/admin/viewnewsletter', 'Admin\AdminController@getViewnewsletter')->name('admin.viewnewsletter');

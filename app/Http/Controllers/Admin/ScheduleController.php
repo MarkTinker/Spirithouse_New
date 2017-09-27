@@ -7,7 +7,7 @@ use App\Http\Controllers\Controller;
 use DB;
 use App\CClass;
 use App\Schedule;
-use App\Http\Traits\CommonTrait;
+use App\Traits\CommonTrait;
 
 class ScheduleController extends Controller
 {

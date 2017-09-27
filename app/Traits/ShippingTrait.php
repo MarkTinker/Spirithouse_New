@@ -1,5 +1,5 @@
 <?php
-namespace App\Http\Traits;
+namespace App\Traits;
 
 trait ShippingTrait {
 	public function calc_shipping($weight,$destination_postcode) {	

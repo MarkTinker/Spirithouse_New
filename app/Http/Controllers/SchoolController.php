@@ -4,11 +4,12 @@ namespace App\Http\Controllers;
 
 use DB;
 use Illuminate\Http\Request;
-use App\Http\Traits\CommonTrait;
+use App\Traits\CommonTrait;
 
 class SchoolController extends Controller
 {
     use CommonTrait;
+
     public function getBook($scheduleid)
     {
         $schedule = DB::table('classes')->select('classes.classid', 'classes.classname', 'classes.classdescription', 'classes.classprice', 'classes.classseats', 
@@ -51,15 +52,15 @@ class SchoolController extends Controller
             $spotsleft = $maxseats - $data['bookings'];
             $data['spotsleft'] = $spotsleft;
 
-            $classname=strip_classname($data['classname']);	            
-            $printdescription = split_classdescription($data['classdescription'] );
+            $classname = $this->strip_classname($data['classname']);	            
+            $printdescription = $this->split_classdescription($data['classdescription'] );
 
             $data['classname'] = $classname;
             $data['printdescription'] = $printdescription;
             
             $description= $printdescription[0];
             $recipes= $printdescription[1];
-            $printrecipes= str_replace("*", "<li class='wide'>", $recipes); // replace asterisk with LI
+            $printrecipes = str_replace("*", "<li class='wide'>", $recipes); // replace asterisk with LI
             
             $data['description'] = $description;
             $data['recipes'] = $recipes;
@@ -113,8 +114,8 @@ class SchoolController extends Controller
             $spotsleft = $maxseats - $data['bookings'];
             $data['spotsleft'] = $spotsleft;
 
-            $classname=strip_classname($data['classname']);	            
-            $printdescription = split_classdescription($data['classdescription'] );
+            $classname = $this->strip_classname($data['classname']);	            
+            $printdescription = $this->split_classdescription($data['classdescription'] );
 
             $data['classname'] = $classname;
             $data['printdescription'] = $printdescription;

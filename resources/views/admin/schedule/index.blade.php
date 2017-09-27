@@ -70,8 +70,10 @@
 
             if($class->daynight==0) { $daynight="Day"; } else { $daynight="Night"; }
 
-            $makebooking="<a href='https://www.spirithouse.com.au/booking.php?scheduleid=$class->scheduleid' target='_blank'>add booking</a>";
-            $waitlist="<a href='http://www.spirithouse.com.au/school-waitlist.php?scheduleid=$class->scheduleid'>w/l</a>";
+            $bookingurl = route('pages.book', $class->scheduleid);
+            $makebooking="<a href='".$bookingurl."' target='_blank'>add booking</a>";
+            $waitlisturl = route('school.waitlist', $class->scheduleid);
+            $waitlist="<a href='".$waitlisturl."'>w/l</a>";
         ?>
         <tr class="{{ $class->dayname == 'Sunday' || $class->dayname == 'Saturday' ? 'we' : 'bg' }}">
             <input type="hidden" name="action" value="updateseats">
