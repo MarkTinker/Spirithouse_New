@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class BookingController extends Controller
@@ -89,6 +90,7 @@ class BookingController extends Controller
      */
     public function getReport()
     {
-        
+        include(app_path(). '\functions\Spreadsheet\Excel\Writer.php');
+        $workbook = new Spreadsheet_Excel_Writer();
     }
 }
